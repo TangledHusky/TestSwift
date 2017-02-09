@@ -1,0 +1,47 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - ENSwiftSideMenu (0.1.1)
+  - JSONModel (1.7.0)
+  - MJRefresh (3.1.12)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - ViewDeck (3.1.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - ENSwiftSideMenu
+  - JSONModel
+  - MJRefresh
+  - SDCycleScrollView
+  - SDWebImage
+  - ViewDeck
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  ENSwiftSideMenu: a934caefbe811e4925f172009349da4a49901307
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  ViewDeck: 942d90dd23c9f97cc8038be352255378167edcca
+
+PODFILE CHECKSUM: 75fe299b0cd471cb22af1e43b5adfc939ed1fc1d
+
+COCOAPODS: 1.1.1

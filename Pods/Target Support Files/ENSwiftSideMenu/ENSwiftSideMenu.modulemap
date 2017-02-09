@@ -1,0 +1,6 @@
+framework module ENSwiftSideMenu {
+  umbrella header "ENSwiftSideMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
