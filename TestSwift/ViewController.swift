@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = UIColor.white
-        
-        
+        self.automaticallyAdjustsScrollViewInsets = false
+        self.navigationItem.title = "YJ的测试Demo"
         
         tableview.delegate = self
         tableview.dataSource = self
@@ -64,6 +64,50 @@ extension ViewController:UITableViewDataSource{
 }
 
 extension ViewController:UITableViewDelegate{
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            break
+            
+        case 1:
+            
+            let vc = PictureBrowsingViewController()
+            vc.navigationItem.title=dataArry[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case 2:
+            
+            let vc=CornerRadiusViewController()
+            vc.navigationItem.title=dataArry[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 3:
+            let vc=CycleBannerViewController()
+            vc.navigationItem.title=dataArry[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case 4:
+            let vc=AnimationTextVC()
+            vc.navigationItem.title=dataArry[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+        
+        case 5:
+            let vc = PoPMenuViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 6:
+            let vc = PlayGifVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 7:
+            let vc = CGContextVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case 8:
+            break
+            
+        default:
+            break
+        }
+            
+            
+            
+    }
 }
 
