@@ -8,14 +8,14 @@
 
 import UIKit
 
-public class ENSideMenuNavigationController: UINavigationController, ENSideMenuProtocol {
+open class ENSideMenuNavigationController: UINavigationController, ENSideMenuProtocol {
     
     public var sideMenu : ENSideMenu?
     public var sideMenuAnimationType : ENSideMenuAnimation = .Default
     
     
     // MARK: - Life cycle
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
     }
     
@@ -27,14 +27,14 @@ public class ENSideMenuNavigationController: UINavigationController, ENSideMenuP
         }
 
         sideMenu = ENSideMenu(sourceView: self.view, menuViewController: menuViewController, menuPosition:.Left)
-        view.bringSubviewToFront(navigationBar)
+        view.bringSubview(toFront: navigationBar)
     }
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    public override func didReceiveMemoryWarning() {
+    open override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

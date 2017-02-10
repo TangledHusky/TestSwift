@@ -39,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftPopMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ViewDeck.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -46,6 +51,52 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>220E2B2F752B29483704AA1E5A2BA677</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2DD4FB1D2AD1CDFDA446645C2E4670A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>94F4F17A10039F89BBA4CD7FE6F8E934</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8D91B1D842619ECA1F7FD664318CDD9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC3688684BF42A20A8998F31DDA51A49</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E14A62900910444707A5504D25EC98DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E1C1806B93D7F3F64ADC36CCFBBD7D87</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA430DF3B7F352074A2EA9ED62381689</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

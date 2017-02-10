@@ -22,6 +22,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - SwiftPopMenu (1.0.2)
   - ViewDeck (3.1.0)
 
 DEPENDENCIES:
@@ -31,6 +32,7 @@ DEPENDENCIES:
   - MJRefresh
   - SDCycleScrollView
   - SDWebImage
+  - SwiftPopMenu
   - ViewDeck
 
 SPEC CHECKSUMS:
@@ -40,8 +42,9 @@ SPEC CHECKSUMS:
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SwiftPopMenu: 12fc958604b16d55e06bb095c7bf3337700229e0
   ViewDeck: 942d90dd23c9f97cc8038be352255378167edcca
 
-PODFILE CHECKSUM: 75fe299b0cd471cb22af1e43b5adfc939ed1fc1d
+PODFILE CHECKSUM: 76e76b7cd1f2d848d4a678bbf3d1f5424e47d5c7
 
 COCOAPODS: 1.1.1

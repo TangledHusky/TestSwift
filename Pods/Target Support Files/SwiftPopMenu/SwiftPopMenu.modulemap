@@ -1,0 +1,6 @@
+framework module SwiftPopMenu {
+  umbrella header "SwiftPopMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import ViewDeck
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let centerVC = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        
+        let deckView:IIViewDeckController = IIViewDeckController(center: centerVC!, leftViewController: MyLeftMenuViewController())
+        
+        
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.makeKeyAndVisible()
+        self.window?.rootViewController = deckView
+        
+
+        
         return true
     }
 
