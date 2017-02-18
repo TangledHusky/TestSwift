@@ -21,7 +21,7 @@ public class SwiftPopMenu: UIView {
     let KScrH:CGFloat = UIScreen.main.bounds.size.height
     
     private var myFrame:CGRect!
-    
+
     private var arrowView : UIView! = nil
     private var arrowViewWidth : CGFloat = 15
     private var arrowViewHeight : CGFloat = 8
@@ -59,7 +59,7 @@ public class SwiftPopMenu: UIView {
     var rowHeightValue:CGFloat = 44
     
     
-    
+   
     
     /**
      位置是popmenu相对整个屏幕的位置
@@ -103,9 +103,9 @@ public class SwiftPopMenu: UIView {
     }
     
     public func dismiss() {
-        self.removeFromSuperview()
+         self.removeFromSuperview()
     }
-    
+
     
     func initViews() {
         self.backgroundColor = UIColor.black.withAlphaComponent(0.1)
@@ -129,11 +129,11 @@ public class SwiftPopMenu: UIView {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.bounces = false
-        UIView.animate(withDuration: 0.3) {
+        UIView.animate(withDuration: 0.3) { 
             self.addSubview(self.tableView)
         }
         
-        
+
         
     }
     
@@ -174,7 +174,7 @@ class SwiftPopMenuCell: UITableViewCell {
         lblTitle.textColor = textColor
         
     }
-    
+
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -182,7 +182,7 @@ class SwiftPopMenuCell: UITableViewCell {
         self.iconImage.frame = CGRect(x: 10, y: (self.bounds.size.height - 20)/2, width: 20, height: 20)
         self.lblTitle.frame = CGRect(x: 40, y: 0, width: self.bounds.size.width - 40, height: self.bounds.size.height)
         self.line.frame = CGRect(x: 0, y: self.frame.size.height - 1, width: self.frame.size.width, height: 1)
-        
+
     }
     
     
@@ -201,7 +201,7 @@ extension SwiftPopMenu : UITableViewDataSource{
             if indexPath.row == popData.count - 1 {
                 cell.fill(iconImage: model.icon, title: model.title,textColor: popTextColor, islast: true)
             }else{
-                cell.fill(iconImage: model.icon, title: model.title,textColor: popTextColor)
+                 cell.fill(iconImage: model.icon, title: model.title,textColor: popTextColor)
             }
             return cell
         }

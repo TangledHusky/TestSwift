@@ -1,20 +1,5 @@
 PODS:
-  - AFNetworking (3.1.0):
-    - AFNetworking/NSURLSession (= 3.1.0)
-    - AFNetworking/Reachability (= 3.1.0)
-    - AFNetworking/Security (= 3.1.0)
-    - AFNetworking/Serialization (= 3.1.0)
-    - AFNetworking/UIKit (= 3.1.0)
-  - AFNetworking/NSURLSession (3.1.0):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.1.0)
-  - AFNetworking/Security (3.1.0)
-  - AFNetworking/Serialization (3.1.0)
-  - AFNetworking/UIKit (3.1.0):
-    - AFNetworking/NSURLSession
-  - ENSwiftSideMenu (0.1.1)
+  - Alamofire (4.3.0)
   - JSONModel (1.7.0)
   - MJRefresh (3.1.12)
   - SDCycleScrollView (1.65):
@@ -22,12 +7,11 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - SwiftPopMenu (1.0.2)
+  - SwiftPopMenu (1.0.4)
   - ViewDeck (3.1.0)
 
 DEPENDENCIES:
-  - AFNetworking
-  - ENSwiftSideMenu
+  - Alamofire
   - JSONModel
   - MJRefresh
   - SDCycleScrollView
@@ -36,15 +20,14 @@ DEPENDENCIES:
   - ViewDeck
 
 SPEC CHECKSUMS:
-  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  ENSwiftSideMenu: a934caefbe811e4925f172009349da4a49901307
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  SwiftPopMenu: 12fc958604b16d55e06bb095c7bf3337700229e0
+  SwiftPopMenu: c9c70b928f7bb8c5804d2457e1db50359f231a25
   ViewDeck: 942d90dd23c9f97cc8038be352255378167edcca
 
-PODFILE CHECKSUM: 76e76b7cd1f2d848d4a678bbf3d1f5424e47d5c7
+PODFILE CHECKSUM: 7fdacfeb92ac573df16c692c8c9bb7ce148d4021
 
 COCOAPODS: 1.1.1

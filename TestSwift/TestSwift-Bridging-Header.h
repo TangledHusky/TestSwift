@@ -4,7 +4,6 @@
 
 
 #import <ViewDeck/ViewDeck.h>
-#import <AFNetworking/AFNetworking.h>
 
 
 

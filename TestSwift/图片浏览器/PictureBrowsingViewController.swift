@@ -28,11 +28,15 @@ class PictureBrowsingViewController: UIViewController {
                                                           "http://ww2.sinaimg.cn/thumbnail/677febf5gw1erma104rhyj20k03dz16y.jpg",
                                                            "http://ww4.sinaimg.cn/thumbnail/677febf5gw1erma1g5xd0j20k0esa7wj.jpg"]
         
+        
+        self.loadPics()
+        
 
         
     }
+
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    func loadPics() {
         var pics:[HZPhotoItem] = []
         
         for obj in _srcStringArray {
@@ -41,10 +45,9 @@ class PictureBrowsingViewController: UIViewController {
             pics.append(item)
         }
         
-        let photoView = HZPhotoGroup()
+        let photoView = HZPhotoGroup(frame: CGRect(x: 0, y: 64, width: KScreenWidth, height: KScreenHeight-64))
         photoView.photoItemArray = pics
         self.view.addSubview(photoView)
-        
     }
 
 }

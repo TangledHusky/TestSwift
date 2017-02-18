@@ -4,12 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>ENSwiftSideMenu.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,27 +47,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>220E2B2F752B29483704AA1E5A2BA677</key>
+		<key>3C586B33A93F87F244D13B6A460A3C28</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2DD4FB1D2AD1CDFDA446645C2E4670A7</key>
+		<key>6A35918316E2F3C8BDF8A0A5012578C6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>94F4F17A10039F89BBA4CD7FE6F8E934</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B8D91B1D842619ECA1F7FD664318CDD9</key>
+		<key>9DFAE41DAD3338E7BD4FC33F9ABFF16B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
+		<key>A8B4DE4E4C84A1AEA12A12681D835C50</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,12 +82,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E1C1806B93D7F3F64ADC36CCFBBD7D87</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FA430DF3B7F352074A2EA9ED62381689</key>
+		<key>F23524EBDA7B00AD3FDAD5287610CA1C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

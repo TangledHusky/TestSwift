@@ -16,9 +16,7 @@
 		FA3F27211E4C32B700CAA270 /* TestSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27201E4C32B700CAA270 /* TestSwiftUITests.swift */; };
 		FA3F273A1E4C584900CAA270 /* MyLeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27391E4C584900CAA270 /* MyLeftMenuViewController.swift */; };
 		FA3F273D1E4C588500CAA270 /* MyRightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F273B1E4C588500CAA270 /* MyRightMenuViewController.swift */; };
-		FA3F273E1E4C588500CAA270 /* YJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F273C1E4C588500CAA270 /* YJNavigationController.swift */; };
 		FA3F27401E4C58F400CAA270 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F273F1E4C58F400CAA270 /* Constant.swift */; };
-		FA3F27421E4C58FD00CAA270 /* YJRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27411E4C58FD00CAA270 /* YJRequest.swift */; };
 		FA3F27441E4C591700CAA270 /* PoPMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27431E4C591700CAA270 /* PoPMenuViewController.swift */; };
 		FA3F27471E4C592700CAA270 /* CGContextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27451E4C592700CAA270 /* CGContextView.swift */; };
 		FA3F27481E4C592700CAA270 /* CGContextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27461E4C592700CAA270 /* CGContextVC.swift */; };
@@ -40,6 +38,8 @@
 		FA3F27721E4C641500CAA270 /* whiteplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3F276C1E4C641500CAA270 /* whiteplaceholder.png */; };
 		FA3F27781E4C644B00CAA270 /* BSCycleTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27751E4C644B00CAA270 /* BSCycleTextView.m */; };
 		FA3F27791E4C644B00CAA270 /* NSString+BSExt.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27771E4C644B00CAA270 /* NSString+BSExt.m */; };
+		FA860A131E519A7A0084A025 /* YJAlamafireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA860A121E519A7A0084A025 /* YJAlamafireHelper.swift */; };
+		FA860A161E51A8DB0084A025 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA860A151E51A8DB0084A025 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,9 +69,7 @@
 		FA3F27351E4C443B00CAA270 /* TestSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA3F27391E4C584900CAA270 /* MyLeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyLeftMenuViewController.swift; path = ../MyLeftMenuViewController.swift; sourceTree = "<group>"; };
 		FA3F273B1E4C588500CAA270 /* MyRightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRightMenuViewController.swift; sourceTree = "<group>"; };
-		FA3F273C1E4C588500CAA270 /* YJNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJNavigationController.swift; sourceTree = "<group>"; };
 		FA3F273F1E4C58F400CAA270 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		FA3F27411E4C58FD00CAA270 /* YJRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJRequest.swift; sourceTree = "<group>"; };
 		FA3F27431E4C591700CAA270 /* PoPMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoPMenuViewController.swift; sourceTree = "<group>"; };
 		FA3F27451E4C592700CAA270 /* CGContextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGContextView.swift; sourceTree = "<group>"; };
 		FA3F27461E4C592700CAA270 /* CGContextVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGContextVC.swift; sourceTree = "<group>"; };
@@ -102,6 +100,8 @@
 		FA3F27751E4C644B00CAA270 /* BSCycleTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCycleTextView.m; sourceTree = "<group>"; };
 		FA3F27761E4C644B00CAA270 /* NSString+BSExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BSExt.h"; sourceTree = "<group>"; };
 		FA3F27771E4C644B00CAA270 /* NSString+BSExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BSExt.m"; sourceTree = "<group>"; };
+		FA860A121E519A7A0084A025 /* YJAlamafireHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJAlamafireHelper.swift; sourceTree = "<group>"; };
+		FA860A151E51A8DB0084A025 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/TestSwift-axvnupztigjzrvderfqlhtuemajz/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA860A161E51A8DB0084A025 /* Alamofire.framework in Frameworks */,
 				8F2E8261E422EEBF2BC125D6 /* Pods_TestSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +127,7 @@
 		A288A701D673BEBC08D0A1C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA860A151E51A8DB0084A025 /* Alamofire.framework */,
 				49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */,
 			);
 			name = Frameworks;
@@ -259,7 +261,7 @@
 		FA3F27321E4C3D0C00CAA270 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				FA3F27411E4C58FD00CAA270 /* YJRequest.swift */,
+				FA860A121E519A7A0084A025 /* YJAlamafireHelper.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -276,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				FA3F273B1E4C588500CAA270 /* MyRightMenuViewController.swift */,
-				FA3F273C1E4C588500CAA270 /* YJNavigationController.swift */,
 				FA3F27391E4C584900CAA270 /* MyLeftMenuViewController.swift */,
 			);
 			path = "侧边栏";
@@ -499,6 +500,7 @@
 				FA3F275C1E4C59A100CAA270 /* DYDefine.swift in Sources */,
 				FA3F27531E4C594900CAA270 /* CycleBannerViewController.swift in Sources */,
 				FA3F27571E4C595A00CAA270 /* CornerRadiusViewController.swift in Sources */,
+				FA860A131E519A7A0084A025 /* YJAlamafireHelper.swift in Sources */,
 				FA3F27711E4C641500CAA270 /* HZWaitingView.m in Sources */,
 				FA3F27781E4C644B00CAA270 /* BSCycleTextView.m in Sources */,
 				FA3F274F1E4C594200CAA270 /* GifView.m in Sources */,
@@ -506,8 +508,6 @@
 				FA3F27481E4C592700CAA270 /* CGContextVC.swift in Sources */,
 				FA3F276F1E4C641500CAA270 /* HZPhotoGroup.m in Sources */,
 				FA3F276E1E4C641500CAA270 /* HZPhotoBrowserView.m in Sources */,
-				FA3F273E1E4C588500CAA270 /* YJNavigationController.swift in Sources */,
-				FA3F27421E4C58FD00CAA270 /* YJRequest.swift in Sources */,
 				FA3F27471E4C592700CAA270 /* CGContextView.swift in Sources */,
 				FA3F27511E4C594200CAA270 /* PlayGifVC.swift in Sources */,
 				FA3F27551E4C595300CAA270 /* PictureBrowsingViewController.swift in Sources */,
@@ -654,7 +654,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = G7KRDXK4J7;
 				INFOPLIST_FILE = TestSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zyyj.com.cn.TestSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -672,7 +672,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = G7KRDXK4J7;
 				INFOPLIST_FILE = TestSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zyyj.com.cn.TestSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
