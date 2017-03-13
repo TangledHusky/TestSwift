@@ -9,29 +9,50 @@
 import UIKit
 import Alamofire
 
-enum MethodType{
-    case GET
-    case POST
-}
+
 
 public class YJAlamafireHelper: NSObject {
     
     
 
-    class func get(urlStr:String,params:[String:AnyObject],finishBlock:((_ result:AnyObject)->Void)) {
-        requestData(type: MethodType.GET, urlStr: urlStr, params: params) { (result) in
-            finishBlock(result)
+    class func get(urlStr:String,params:[String:AnyObject],finishBlock:@escaping ((_ result:AnyObject)->Void)){
+       requestData(type: .get, urlStr: urlStr, params: params) { (response) in
+        finishBlock(response)
+        }
+    
+    }
+    
+    
+    class func post(urlStr:String,params:[String:AnyObject],finishBlock:@escaping ((_ result:AnyObject)->Void)){
+        requestData(type: .post, urlStr: urlStr, params: params) { (response) in
+        finishBlock(response)
+        }
+        
+    }
+    
+    
+    class func download(urlStr:String,finishBlock:@escaping ((_ result:AnyObject)->Void)){
+        Alamofire.download(urlStr).responseData { (data) in
+            finishBlock(data as AnyObject)
         }
     }
+
 
 }
 
 
 extension YJAlamafireHelper{
-    class func requestData(type:MethodType,urlStr:String,params:[String:AnyObject],finishBlock:((_ result:AnyObject)->Void)) {
+    class func requestData(type:HTTPMethod,urlStr:String,params:[String:AnyObject],finishBlock:@escaping ((_ result:AnyObject)->Void)) {
         
-//        let requestType = type == MethodType.GET ? Alamofire.Method.GET : Alamofire.Method.POST
         
+        Alamofire.request(urlStr, method: type, parameters: params, encoding: JSONEncoding.default, headers: nil).responseJSON { (response)  in
+            //是否请求成功
+            if let jsonValue = response.result.value {
+                print("jsonValue:\(jsonValue)")
+                finishBlock(jsonValue as AnyObject)
+            }
+        }
+
         
         
         

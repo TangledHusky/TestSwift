@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     let cellID:String = "homeCellID"
     
-    lazy var dataArry:[String] = ["仿斗鱼",
+    lazy var dataArry:[String] = ["仿斗鱼（未实现）",
                                   "图片浏览器",
                                   "圆角与裁剪的测试",
                                   "广告轮播",
@@ -22,7 +22,9 @@ class ViewController: UIViewController {
                                   "PopView－边角弹出箭头框",
                                   "播放Gif",
                                   "CGContext－直线、虚线、圆",
-                                  ""
+                                  "侧边固定滑动效果",
+                                  "通用测试----",
+                                  "二维码扫描"
     ]
     
     
@@ -70,7 +72,9 @@ extension ViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            break
+            let vc = DYHomeViewController()
+            vc.navigationItem.title=dataArry[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
             
         case 1:
             
@@ -103,7 +107,21 @@ extension ViewController:UITableViewDelegate{
             let vc = CGContextVC()
             self.navigationController?.pushViewController(vc, animated: true)
         case 8:
+            let vc = ScrollViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
             break
+        case 9:
+            let vc = CommonTestViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            break
+        case 10:
+            let vc = QRCodeViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            break
+
             
         default:
             break

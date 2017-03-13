@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import Alamofire
 
 class DYHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.red
+        self.view.backgroundColor = UIColor.white
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +23,23 @@ class DYHomeViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let jsonString:String = PublicMethod.getJSONStringFromDictionary(dictionary: ["SystemName":"iOS","TsName":"Student"]) as String
+        
+//        YJAlamafireHelper.post(urlStr: "http://sign.siva.edu.cn/app1/appVersionInfo.do", params: ["jsonString":jsonString as AnyObject]) { (response) in
+//            print(response)
+//        }
+        
+
+        
+//        YJAlamafireHelper.download(urlStr: "https://httpbin.org/image/png") { (data) in
+//            DispatchQueue.main.async {
+//                
+//            }
+//        }
     }
-    */
-
+    
+  
 }

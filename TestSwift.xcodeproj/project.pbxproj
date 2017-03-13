@@ -38,8 +38,21 @@
 		FA3F27721E4C641500CAA270 /* whiteplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3F276C1E4C641500CAA270 /* whiteplaceholder.png */; };
 		FA3F27781E4C644B00CAA270 /* BSCycleTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27751E4C644B00CAA270 /* BSCycleTextView.m */; };
 		FA3F27791E4C644B00CAA270 /* NSString+BSExt.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27771E4C644B00CAA270 /* NSString+BSExt.m */; };
+		FA55EEC21E76863700684131 /* QRCodeShowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55EEC11E76863700684131 /* QRCodeShowInfoView.swift */; };
+		FA55EEC41E76887900684131 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55EEC31E76887900684131 /* UIColorExtension.swift */; };
+		FA6327111E6FB1FA009F1CE7 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6327101E6FB1FA009F1CE7 /* ScrollViewController.swift */; };
+		FA6EF8981E766C0400B92597 /* Icon_SaoLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF8941E766C0400B92597 /* Icon_SaoLine@2x.png */; };
+		FA6EF8991E766C0400B92597 /* Icon_SaoLineOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF8951E766C0400B92597 /* Icon_SaoLineOn@2x.png */; };
+		FA6EF89A1E766C0400B92597 /* Icon_SaoYiSao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF8961E766C0400B92597 /* Icon_SaoYiSao@2x.png */; };
+		FA6EF89C1E766C0D00B92597 /* QRCodeRead.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF89B1E766C0D00B92597 /* QRCodeRead.wav */; };
 		FA860A131E519A7A0084A025 /* YJAlamafireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA860A121E519A7A0084A025 /* YJAlamafireHelper.swift */; };
 		FA860A161E51A8DB0084A025 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA860A151E51A8DB0084A025 /* Alamofire.framework */; };
+		FADDCA561E724B9A0075492D /* CommonTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDCA551E724B9A0075492D /* CommonTestViewController.swift */; };
+		FADDCA581E7287700075492D /* PublicMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDCA571E7287700075492D /* PublicMethod.swift */; };
+		FAE61D4B1E76312C00C8C4AE /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4A1E76312C00C8C4AE /* QRCodeViewController.swift */; };
+		FAE61D4D1E7634E200C8C4AE /* QRCodeGenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4C1E7634E200C8C4AE /* QRCodeGenerateViewController.swift */; };
+		FAE61D4F1E7634F000C8C4AE /* QRCodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4E1E7634F000C8C4AE /* QRCodeScanViewController.swift */; };
+		FAE61D581E763B2C00C8C4AE /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D571E763B2C00C8C4AE /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,8 +113,21 @@
 		FA3F27751E4C644B00CAA270 /* BSCycleTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCycleTextView.m; sourceTree = "<group>"; };
 		FA3F27761E4C644B00CAA270 /* NSString+BSExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BSExt.h"; sourceTree = "<group>"; };
 		FA3F27771E4C644B00CAA270 /* NSString+BSExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BSExt.m"; sourceTree = "<group>"; };
+		FA55EEC11E76863700684131 /* QRCodeShowInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeShowInfoView.swift; path = Rescorces/QRCodeShowInfoView.swift; sourceTree = "<group>"; };
+		FA55EEC31E76887900684131 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		FA6327101E6FB1FA009F1CE7 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		FA6EF8941E766C0400B92597 /* Icon_SaoLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_SaoLine@2x.png"; sourceTree = "<group>"; };
+		FA6EF8951E766C0400B92597 /* Icon_SaoLineOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_SaoLineOn@2x.png"; sourceTree = "<group>"; };
+		FA6EF8961E766C0400B92597 /* Icon_SaoYiSao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_SaoYiSao@2x.png"; sourceTree = "<group>"; };
+		FA6EF89B1E766C0D00B92597 /* QRCodeRead.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = QRCodeRead.wav; sourceTree = "<group>"; };
 		FA860A121E519A7A0084A025 /* YJAlamafireHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJAlamafireHelper.swift; sourceTree = "<group>"; };
 		FA860A151E51A8DB0084A025 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/TestSwift-axvnupztigjzrvderfqlhtuemajz/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		FADDCA551E724B9A0075492D /* CommonTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTestViewController.swift; sourceTree = "<group>"; };
+		FADDCA571E7287700075492D /* PublicMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicMethod.swift; sourceTree = "<group>"; };
+		FAE61D4A1E76312C00C8C4AE /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		FAE61D4C1E7634E200C8C4AE /* QRCodeGenerateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeGenerateViewController.swift; sourceTree = "<group>"; };
+		FAE61D4E1E7634F000C8C4AE /* QRCodeScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeScanViewController.swift; sourceTree = "<group>"; };
+		FAE61D571E763B2C00C8C4AE /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,9 +191,12 @@
 		FA3F270A1E4C32B700CAA270 /* TestSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FAE61D491E76310900C8C4AE /* 二维码 */,
+				FADDCA541E724B740075492D /* 通用测试页面 */,
+				FA63270F1E6FB1B3009F1CE7 /* 侧边固定滑动 */,
+				FA3F27321E4C3D0C00CAA270 /* Common */,
 				FA3F27581E4C597F00CAA270 /* 仿斗鱼 */,
 				FA3F27331E4C3D2100CAA270 /* Main */,
-				FA3F27321E4C3D0C00CAA270 /* Common */,
 				FA3F27311E4C3CF700CAA270 /* PopView－边角弹出箭头框 */,
 				FA3F27301E4C3CE600CAA270 /* CGContext－直线、虚线、圆 */,
 				FA3F272F1E4C3CD900CAA270 /* Label文字跑马灯 */,
@@ -262,6 +291,9 @@
 			isa = PBXGroup;
 			children = (
 				FA860A121E519A7A0084A025 /* YJAlamafireHelper.swift */,
+				FADDCA571E7287700075492D /* PublicMethod.swift */,
+				FAE61D571E763B2C00C8C4AE /* UIImageExtension.swift */,
+				FA55EEC31E76887900684131 /* UIColorExtension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -329,6 +361,45 @@
 				FA3F27771E4C644B00CAA270 /* NSString+BSExt.m */,
 			);
 			path = BSCycleTextView;
+			sourceTree = "<group>";
+		};
+		FA63270F1E6FB1B3009F1CE7 /* 侧边固定滑动 */ = {
+			isa = PBXGroup;
+			children = (
+				FA6327101E6FB1FA009F1CE7 /* ScrollViewController.swift */,
+			);
+			name = "侧边固定滑动";
+			sourceTree = "<group>";
+		};
+		FA6EF8921E766C0400B92597 /* Rescorces */ = {
+			isa = PBXGroup;
+			children = (
+				FA6EF89B1E766C0D00B92597 /* QRCodeRead.wav */,
+				FA6EF8941E766C0400B92597 /* Icon_SaoLine@2x.png */,
+				FA6EF8951E766C0400B92597 /* Icon_SaoLineOn@2x.png */,
+				FA6EF8961E766C0400B92597 /* Icon_SaoYiSao@2x.png */,
+			);
+			path = Rescorces;
+			sourceTree = "<group>";
+		};
+		FADDCA541E724B740075492D /* 通用测试页面 */ = {
+			isa = PBXGroup;
+			children = (
+				FADDCA551E724B9A0075492D /* CommonTestViewController.swift */,
+			);
+			path = "通用测试页面";
+			sourceTree = "<group>";
+		};
+		FAE61D491E76310900C8C4AE /* 二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				FA6EF8921E766C0400B92597 /* Rescorces */,
+				FAE61D4A1E76312C00C8C4AE /* QRCodeViewController.swift */,
+				FAE61D4C1E7634E200C8C4AE /* QRCodeGenerateViewController.swift */,
+				FAE61D4E1E7634F000C8C4AE /* QRCodeScanViewController.swift */,
+				FA55EEC11E76863700684131 /* QRCodeShowInfoView.swift */,
+			);
+			path = "二维码";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,9 +492,13 @@
 			files = (
 				FA3F27161E4C32B700CAA270 /* LaunchScreen.storyboard in Resources */,
 				FA3F27131E4C32B700CAA270 /* Assets.xcassets in Resources */,
+				FA6EF8991E766C0400B92597 /* Icon_SaoLineOn@2x.png in Resources */,
+				FA6EF8981E766C0400B92597 /* Icon_SaoLine@2x.png in Resources */,
 				FA3F27721E4C641500CAA270 /* whiteplaceholder.png in Resources */,
 				FA3F27501E4C594200CAA270 /* 1533461388039947.gif in Resources */,
+				FA6EF89C1E766C0D00B92597 /* QRCodeRead.wav in Resources */,
 				FA3F27111E4C32B700CAA270 /* Main.storyboard in Resources */,
+				FA6EF89A1E766C0400B92597 /* Icon_SaoYiSao@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,18 +571,27 @@
 				FA3F27791E4C644B00CAA270 /* NSString+BSExt.m in Sources */,
 				FA3F27701E4C641500CAA270 /* HZPhotoItem.m in Sources */,
 				FA3F273A1E4C584900CAA270 /* MyLeftMenuViewController.swift in Sources */,
+				FA6327111E6FB1FA009F1CE7 /* ScrollViewController.swift in Sources */,
 				FA3F273D1E4C588500CAA270 /* MyRightMenuViewController.swift in Sources */,
 				FA3F275C1E4C59A100CAA270 /* DYDefine.swift in Sources */,
+				FAE61D4F1E7634F000C8C4AE /* QRCodeScanViewController.swift in Sources */,
 				FA3F27531E4C594900CAA270 /* CycleBannerViewController.swift in Sources */,
+				FA55EEC21E76863700684131 /* QRCodeShowInfoView.swift in Sources */,
 				FA3F27571E4C595A00CAA270 /* CornerRadiusViewController.swift in Sources */,
 				FA860A131E519A7A0084A025 /* YJAlamafireHelper.swift in Sources */,
+				FAE61D4D1E7634E200C8C4AE /* QRCodeGenerateViewController.swift in Sources */,
+				FAE61D581E763B2C00C8C4AE /* UIImageExtension.swift in Sources */,
+				FA55EEC41E76887900684131 /* UIColorExtension.swift in Sources */,
+				FAE61D4B1E76312C00C8C4AE /* QRCodeViewController.swift in Sources */,
 				FA3F27711E4C641500CAA270 /* HZWaitingView.m in Sources */,
 				FA3F27781E4C644B00CAA270 /* BSCycleTextView.m in Sources */,
+				FADDCA561E724B9A0075492D /* CommonTestViewController.swift in Sources */,
 				FA3F274F1E4C594200CAA270 /* GifView.m in Sources */,
 				FA3F275B1E4C59A100CAA270 /* DYMainViewController.swift in Sources */,
 				FA3F27481E4C592700CAA270 /* CGContextVC.swift in Sources */,
 				FA3F276F1E4C641500CAA270 /* HZPhotoGroup.m in Sources */,
 				FA3F276E1E4C641500CAA270 /* HZPhotoBrowserView.m in Sources */,
+				FADDCA581E7287700075492D /* PublicMethod.swift in Sources */,
 				FA3F27471E4C592700CAA270 /* CGContextView.swift in Sources */,
 				FA3F27511E4C594200CAA270 /* PlayGifVC.swift in Sources */,
 				FA3F27551E4C595300CAA270 /* PictureBrowsingViewController.swift in Sources */,
@@ -654,7 +738,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = G7KRDXK4J7;
 				INFOPLIST_FILE = TestSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zyyj.com.cn.TestSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -672,7 +756,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = G7KRDXK4J7;
 				INFOPLIST_FILE = TestSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zyyj.com.cn.TestSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
