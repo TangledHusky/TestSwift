@@ -24,7 +24,9 @@ class ViewController: UIViewController {
                                   "CGContext－直线、虚线、圆",
                                   "侧边固定滑动效果",
                                   "通用测试----",
-                                  "二维码扫描"
+                                  "二维码扫描",
+                                  "UDP发图片-测试data大于9k接受不了",
+                                  "SnapKit布局"
     ]
     
     
@@ -118,6 +120,16 @@ extension ViewController:UITableViewDelegate{
             break
         case 10:
             let vc = QRCodeViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            break
+        case 11:
+            let vc = UDPClientViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            break
+        case 12:
+            let vc = SnapKitViewController()
             self.navigationController?.pushViewController(vc, animated: true)
             
             break

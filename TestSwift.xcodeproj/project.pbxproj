@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8F2E8261E422EEBF2BC125D6 /* Pods_TestSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */; };
+		FA32A4011E80F64100171770 /* UDPClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A4001E80F64100171770 /* UDPClientViewController.swift */; };
+		FA32A4031E8102DD00171770 /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA32A4021E8102DD00171770 /* test.jpeg */; };
+		FA32A4091E82149800171770 /* 8k.png in Resources */ = {isa = PBXBuildFile; fileRef = FA32A4081E82149800171770 /* 8k.png */; };
+		FA32A40B1E8214A700171770 /* 35k.png in Resources */ = {isa = PBXBuildFile; fileRef = FA32A40A1E8214A700171770 /* 35k.png */; };
+		FA32A40E1E821D4A00171770 /* SnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A40D1E821D4A00171770 /* SnapKitViewController.swift */; };
+		FA32A4101E82224400171770 /* SnapDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A40F1E82224400171770 /* SnapDetailViewController.swift */; };
 		FA3F270C1E4C32B700CAA270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F270B1E4C32B700CAA270 /* AppDelegate.swift */; };
 		FA3F270E1E4C32B700CAA270 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F270D1E4C32B700CAA270 /* ViewController.swift */; };
 		FA3F27111E4C32B700CAA270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3F270F1E4C32B700CAA270 /* Main.storyboard */; };
@@ -69,6 +75,12 @@
 		0E693CECE1112068234B7447 /* Pods-TestSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestSwift/Pods-TestSwift.release.xcconfig"; sourceTree = "<group>"; };
 		49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9596105D0566442E5C180B7E /* Pods-TestSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestSwift/Pods-TestSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		FA32A4001E80F64100171770 /* UDPClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPClientViewController.swift; sourceTree = "<group>"; };
+		FA32A4021E8102DD00171770 /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpeg; sourceTree = "<group>"; };
+		FA32A4081E82149800171770 /* 8k.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8k.png; sourceTree = "<group>"; };
+		FA32A40A1E8214A700171770 /* 35k.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 35k.png; sourceTree = "<group>"; };
+		FA32A40D1E821D4A00171770 /* SnapKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitViewController.swift; sourceTree = "<group>"; };
+		FA32A40F1E82224400171770 /* SnapDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapDetailViewController.swift; sourceTree = "<group>"; };
 		FA3F27081E4C32B700CAA270 /* TestSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3F270B1E4C32B700CAA270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3F270D1E4C32B700CAA270 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +180,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FA32A3FB1E80B72900171770 /* UDP 发图片 */ = {
+			isa = PBXGroup;
+			children = (
+				FA32A40A1E8214A700171770 /* 35k.png */,
+				FA32A4081E82149800171770 /* 8k.png */,
+				FA32A4021E8102DD00171770 /* test.jpeg */,
+				FA32A4001E80F64100171770 /* UDPClientViewController.swift */,
+			);
+			name = "UDP 发图片";
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		FA32A40C1E821D2700171770 /* SnapKit布局 */ = {
+			isa = PBXGroup;
+			children = (
+				FA32A40D1E821D4A00171770 /* SnapKitViewController.swift */,
+				FA32A40F1E82224400171770 /* SnapDetailViewController.swift */,
+			);
+			path = "SnapKit布局";
+			sourceTree = "<group>";
+		};
 		FA3F26FF1E4C32B700CAA270 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +224,8 @@
 		FA3F270A1E4C32B700CAA270 /* TestSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FA32A40C1E821D2700171770 /* SnapKit布局 */,
+				FA32A3FB1E80B72900171770 /* UDP 发图片 */,
 				FAE61D491E76310900C8C4AE /* 二维码 */,
 				FADDCA541E724B740075492D /* 通用测试页面 */,
 				FA63270F1E6FB1B3009F1CE7 /* 侧边固定滑动 */,
@@ -495,9 +530,12 @@
 				FA6EF8991E766C0400B92597 /* Icon_SaoLineOn@2x.png in Resources */,
 				FA6EF8981E766C0400B92597 /* Icon_SaoLine@2x.png in Resources */,
 				FA3F27721E4C641500CAA270 /* whiteplaceholder.png in Resources */,
+				FA32A4091E82149800171770 /* 8k.png in Resources */,
+				FA32A4031E8102DD00171770 /* test.jpeg in Resources */,
 				FA3F27501E4C594200CAA270 /* 1533461388039947.gif in Resources */,
 				FA6EF89C1E766C0D00B92597 /* QRCodeRead.wav in Resources */,
 				FA3F27111E4C32B700CAA270 /* Main.storyboard in Resources */,
+				FA32A40B1E8214A700171770 /* 35k.png in Resources */,
 				FA6EF89A1E766C0400B92597 /* Icon_SaoYiSao@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,6 +605,7 @@
 				FA3F274A1E4C593700CAA270 /* AnimationTextVC.swift in Sources */,
 				FA3F270E1E4C32B700CAA270 /* ViewController.swift in Sources */,
 				FA3F27441E4C591700CAA270 /* PoPMenuViewController.swift in Sources */,
+				FA32A40E1E821D4A00171770 /* SnapKitViewController.swift in Sources */,
 				FA3F276D1E4C641500CAA270 /* HZPhotoBrowser.m in Sources */,
 				FA3F27791E4C644B00CAA270 /* NSString+BSExt.m in Sources */,
 				FA3F27701E4C641500CAA270 /* HZPhotoItem.m in Sources */,
@@ -586,6 +625,7 @@
 				FA3F27711E4C641500CAA270 /* HZWaitingView.m in Sources */,
 				FA3F27781E4C644B00CAA270 /* BSCycleTextView.m in Sources */,
 				FADDCA561E724B9A0075492D /* CommonTestViewController.swift in Sources */,
+				FA32A4011E80F64100171770 /* UDPClientViewController.swift in Sources */,
 				FA3F274F1E4C594200CAA270 /* GifView.m in Sources */,
 				FA3F275B1E4C59A100CAA270 /* DYMainViewController.swift in Sources */,
 				FA3F27481E4C592700CAA270 /* CGContextVC.swift in Sources */,
@@ -597,6 +637,7 @@
 				FA3F27551E4C595300CAA270 /* PictureBrowsingViewController.swift in Sources */,
 				FA3F275F1E4C59F200CAA270 /* DYHomeViewController.swift in Sources */,
 				FA3F270C1E4C32B700CAA270 /* AppDelegate.swift in Sources */,
+				FA32A4101E82224400171770 /* SnapDetailViewController.swift in Sources */,
 				FA3F27401E4C58F400CAA270 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

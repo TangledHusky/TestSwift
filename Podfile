@@ -14,6 +14,10 @@ pod 'MJRefresh'
 pod 'SDCycleScrollView'
 pod 'ViewDeck'
 
+pod 'ZXingObjC', '~> 3.0'
 
+pod 'CocoaAsyncSocket'
+
+pod 'SnapKit'
 end
 

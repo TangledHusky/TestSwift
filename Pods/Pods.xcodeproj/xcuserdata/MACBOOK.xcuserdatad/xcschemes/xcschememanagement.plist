@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CocoaAsyncSocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JSONModel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftPopMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,15 +54,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ZXingObjC.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3C586B33A93F87F244D13B6A460A3C28</key>
+		<key>02BE4121DE18B4F597DC914B6A416E7F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6A35918316E2F3C8BDF8A0A5012578C6</key>
+		<key>2C1208B0E387C4C0DAC9A685FB0DD2C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6CE8839FA3D21916ED5324B5ED49345E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7FB3DB63F56E0454EC2B5786C15C21E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,12 +87,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9DFAE41DAD3338E7BD4FC33F9ABFF16B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A8B4DE4E4C84A1AEA12A12681D835C50</key>
+		<key>AC0D2D2B4EE7C873431AB3502859CA60</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,7 +102,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F23524EBDA7B00AD3FDAD5287610CA1C</key>
+		<key>ECE3BD8E0ED00CD3B1E7961B5B7DA173</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE3C8C0D53A47F548D39B6C8EFCDC115</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F87FCC603CFF5163FA1F4699BF0C4B03</key>
 		<dict>
 			<key>primary</key>
 			<true/>
