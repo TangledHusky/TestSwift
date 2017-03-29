@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  TestSwift
 //
-//  Created by 李亚军 on 2017/2/9.
+//  Created by YJ on 2017/2/9.
 //  Copyright © 2017年 zyyj. All rights reserved.
 //
 
@@ -26,7 +26,12 @@ class ViewController: UIViewController {
                                   "通用测试----",
                                   "二维码扫描",
                                   "UDP发图片-测试data大于9k接受不了",
-                                  "SnapKit布局"
+                                  "SnapKit布局",
+                                  "RxSwift-登录界面",
+                                  "RxSwift-列表",
+                                  "测试Pad-UIPopoverController",
+                                  "测试Pad-UISplitController",
+        
     ]
     
     
@@ -130,6 +135,27 @@ extension ViewController:UITableViewDelegate{
             break
         case 12:
             let vc = SnapKitViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            break
+        case 13:
+            let sb = UIStoryboard(name: "RxSwift", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "RxSwiftLoginViewController")
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            break
+        case 14:
+            let vc = RxSwiftTableviewVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            break
+        case 15:
+            let vc = TestPadViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            break
+        case 16:
+            let vc = RxSwiftTableviewVC()
             self.navigationController?.pushViewController(vc, animated: true)
             
             break

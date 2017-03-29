@@ -2,7 +2,7 @@
 //  CycleBannerViewController.swift
 //  TestSwift
 //
-//  Created by 李亚军 on 2016/12/12.
+//  Created by YJ on 2016/12/12.
 //  Copyright © 2016年 zyyj. All rights reserved.
 //
 

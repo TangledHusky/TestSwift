@@ -2,7 +2,7 @@
 //  MyRightMenuViewController.swift
 //  TestSwift
 //
-//  Created by 李亚军 on 2016/12/14.
+//  Created by YJ on 2016/12/14.
 //  Copyright © 2016年 zyyj. All rights reserved.
 //
 

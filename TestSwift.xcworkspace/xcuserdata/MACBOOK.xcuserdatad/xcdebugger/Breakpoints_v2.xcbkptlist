@@ -6,31 +6,31 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/CocoaAsyncSocket/Source/GCD/GCDAsyncUdpSocket.m"
-            timestampString = "511842441.784874"
+            timestampString = "512104408.66661"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "845"
-            endingLineNumber = "845"
-            landmarkName = "-maxReceiveIPv6BufferSize"
+            startingLineNumber = "4393"
+            endingLineNumber = "4393"
+            landmarkName = "-doReceive"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/CocoaAsyncSocket/Source/GCD/GCDAsyncUdpSocket.m"
-            timestampString = "511842499.01541"
+            timestampString = "512104408.66661"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "4407"
-            endingLineNumber = "4407"
+            startingLineNumber = "4430"
+            endingLineNumber = "4430"
             landmarkName = "-doReceive"
             landmarkType = "7">
          </BreakpointContent>

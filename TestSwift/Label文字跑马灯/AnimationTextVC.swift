@@ -2,7 +2,7 @@
 //  AnimationTextVC.swift
 //  TestSwift
 //
-//  Created by 李亚军 on 16/7/5.
+//  Created by YJ on 16/7/5.
 //  Copyright © 2016年 zyyj. All rights reserved.
 //
 
