@@ -31,6 +31,10 @@ class ViewController: UIViewController {
                                   "RxSwift-列表",
                                   "测试Pad-UIPopoverController",
                                   "测试Pad-UISplitController",
+                                  "环形下载进度条",
+                                  "UISlider触摸区域放大",
+                                  "多任务下载",
+                                  "批量上传图片",
         
     ]
     
@@ -45,13 +49,18 @@ class ViewController: UIViewController {
         tableview.delegate = self
         tableview.dataSource = self
         tableview.tableFooterView = UIView.init()
+        
+        
+        print(ss)
+        print(aa)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         
-    
+              
+
         
     }
 
@@ -156,6 +165,27 @@ extension ViewController:UITableViewDelegate{
             break
         case 16:
             let vc = RxSwiftTableviewVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            break
+        case 17:
+            let vc = TestDownloadingCircleVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            break
+        case 18:
+            let vc = YJSliderViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            break
+
+        case 19:
+            let vc = BigFileDownloadViewController(nibName: "BigFileDownloadViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            break
+        case 20:
+            let vc = BatchUploadPicViewController()
             self.navigationController?.pushViewController(vc, animated: true)
             
             break

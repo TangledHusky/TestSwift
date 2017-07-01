@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8F2E8261E422EEBF2BC125D6 /* Pods_TestSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */; };
+		FA07A26B1EA1EF8600B0A071 /* YJSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A26A1EA1EF8600B0A071 /* YJSliderViewController.swift */; };
+		FA07A26D1EA1EF9000B0A071 /* YJSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A26C1EA1EF9000B0A071 /* YJSlider.swift */; };
+		FA22F8131EA456B50027DD58 /* DBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FA22F8121EA456B50027DD58 /* DBSlider.m */; };
 		FA32A4011E80F64100171770 /* UDPClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A4001E80F64100171770 /* UDPClientViewController.swift */; };
 		FA32A4031E8102DD00171770 /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA32A4021E8102DD00171770 /* test.jpeg */; };
 		FA32A4091E82149800171770 /* 8k.png in Resources */ = {isa = PBXBuildFile; fileRef = FA32A4081E82149800171770 /* 8k.png */; };
@@ -20,6 +23,10 @@
 		FA32A54A1E8369C300171770 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A5491E8369C300171770 /* LoginViewModel.swift */; };
 		FA32A54C1E8369E200171770 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A54B1E8369E200171770 /* TableViewModel.swift */; };
 		FA32A54E1E836A1600171770 /* LoginInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A54D1E836A1600171770 /* LoginInfoModel.swift */; };
+		FA3756611E948860009938AE /* TestDownloadingCircleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3756601E948860009938AE /* TestDownloadingCircleVC.swift */; };
+		FA3756631E9488D7009938AE /* YJDownloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3756621E9488D7009938AE /* YJDownloading.swift */; };
+		FA3BF1481EB8290F000A37AD /* BatchUploadPicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BF1471EB8290F000A37AD /* BatchUploadPicViewController.swift */; };
+		FA3BF14A1EB85833000A37AD /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3BF1491EB85833000A37AD /* 1.png */; };
 		FA3F270C1E4C32B700CAA270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F270B1E4C32B700CAA270 /* AppDelegate.swift */; };
 		FA3F270E1E4C32B700CAA270 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F270D1E4C32B700CAA270 /* ViewController.swift */; };
 		FA3F27111E4C32B700CAA270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3F270F1E4C32B700CAA270 /* Main.storyboard */; };
@@ -50,13 +57,173 @@
 		FA3F27721E4C641500CAA270 /* whiteplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3F276C1E4C641500CAA270 /* whiteplaceholder.png */; };
 		FA3F27781E4C644B00CAA270 /* BSCycleTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27751E4C644B00CAA270 /* BSCycleTextView.m */; };
 		FA3F27791E4C644B00CAA270 /* NSString+BSExt.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27771E4C644B00CAA270 /* NSString+BSExt.m */; };
+		FA46E4691EA05FA100372880 /* 001-expected.png in Resources */ = {isa = PBXBuildFile; fileRef = FA46E4681EA05FA100372880 /* 001-expected.png */; };
+		FA46E46B1EA05FCB00372880 /*  011_扫描二维码_失败.png in Resources */ = {isa = PBXBuildFile; fileRef = FA46E46A1EA05FCB00372880 /*  011_扫描二维码_失败.png */; };
 		FA55EEC21E76863700684131 /* QRCodeShowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55EEC11E76863700684131 /* QRCodeShowInfoView.swift */; };
 		FA55EEC41E76887900684131 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55EEC31E76887900684131 /* UIColorExtension.swift */; };
+		FA5E40A01EA8A70800BBD804 /* DownloadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E409F1EA8A70800BBD804 /* DownloadModel.swift */; };
+		FA5FBFD21EA87D75009C65BF /* BigFileDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FBFD11EA87D75009C65BF /* BigFileDownloadViewController.swift */; };
+		FA5FBFD41EA87D9D009C65BF /* BigFileDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5FBFD31EA87D9D009C65BF /* BigFileDownloadViewController.xib */; };
+		FA5FBFD61EA87EFA009C65BF /* YJDownloadProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FBFD51EA87EFA009C65BF /* YJDownloadProgress.swift */; };
+		FA5FBFD91EA8A5F8009C65BF /* DownloadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FBFD71EA8A5F8009C65BF /* DownloadCell.swift */; };
+		FA5FBFDA1EA8A5F8009C65BF /* DownloadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5FBFD81EA8A5F8009C65BF /* DownloadCell.xib */; };
 		FA6327111E6FB1FA009F1CE7 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6327101E6FB1FA009F1CE7 /* ScrollViewController.swift */; };
 		FA6EF8981E766C0400B92597 /* Icon_SaoLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF8941E766C0400B92597 /* Icon_SaoLine@2x.png */; };
 		FA6EF8991E766C0400B92597 /* Icon_SaoLineOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF8951E766C0400B92597 /* Icon_SaoLineOn@2x.png */; };
 		FA6EF89A1E766C0400B92597 /* Icon_SaoYiSao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF8961E766C0400B92597 /* Icon_SaoYiSao@2x.png */; };
 		FA6EF89C1E766C0D00B92597 /* QRCodeRead.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF89B1E766C0D00B92597 /* QRCodeRead.wav */; };
+		FA7DD5B31F074D85002F4237 /* AnimationTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27491E4C593700CAA270 /* AnimationTextVC.swift */; };
+		FA7DD5B41F074D85002F4237 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F270D1E4C32B700CAA270 /* ViewController.swift */; };
+		FA7DD5B51F074D85002F4237 /* PoPMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27431E4C591700CAA270 /* PoPMenuViewController.swift */; };
+		FA7DD5B61F074D85002F4237 /* YJDownloadProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FBFD51EA87EFA009C65BF /* YJDownloadProgress.swift */; };
+		FA7DD5B71F074D85002F4237 /* SnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A40D1E821D4A00171770 /* SnapKitViewController.swift */; };
+		FA7DD5B81F074D85002F4237 /* TestPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F51E8B51A60027B7AD /* TestPadViewController.swift */; };
+		FA7DD5B91F074D85002F4237 /* BigFileDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FBFD11EA87D75009C65BF /* BigFileDownloadViewController.swift */; };
+		FA7DD5BA1F074D85002F4237 /* RxSwiftLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A41A1E825AC000171770 /* RxSwiftLoginViewController.swift */; };
+		FA7DD5BB1F074D85002F4237 /* HZPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27621E4C641500CAA270 /* HZPhotoBrowser.m */; };
+		FA7DD5BC1F074D85002F4237 /* NSString+BSExt.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27771E4C644B00CAA270 /* NSString+BSExt.m */; };
+		FA7DD5BD1F074D85002F4237 /* HZPhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27691E4C641500CAA270 /* HZPhotoItem.m */; };
+		FA7DD5BE1F074D85002F4237 /* MyLeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27391E4C584900CAA270 /* MyLeftMenuViewController.swift */; };
+		FA7DD5BF1F074D85002F4237 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6327101E6FB1FA009F1CE7 /* ScrollViewController.swift */; };
+		FA7DD5C01F074D85002F4237 /* MyRightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F273B1E4C588500CAA270 /* MyRightMenuViewController.swift */; };
+		FA7DD5C11F074D85002F4237 /* YJSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A26A1EA1EF8600B0A071 /* YJSliderViewController.swift */; };
+		FA7DD5C21F074D85002F4237 /* DYDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F275A1E4C59A100CAA270 /* DYDefine.swift */; };
+		FA7DD5C31F074D85002F4237 /* QRCodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4E1E7634F000C8C4AE /* QRCodeScanViewController.swift */; };
+		FA7DD5C41F074D85002F4237 /* CycleBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27521E4C594900CAA270 /* CycleBannerViewController.swift */; };
+		FA7DD5C51F074D85002F4237 /* DBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FA22F8121EA456B50027DD58 /* DBSlider.m */; };
+		FA7DD5C61F074D85002F4237 /* QRCodeShowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55EEC11E76863700684131 /* QRCodeShowInfoView.swift */; };
+		FA7DD5C71F074D85002F4237 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A54B1E8369E200171770 /* TableViewModel.swift */; };
+		FA7DD5C81F074D85002F4237 /* TestPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F11E8B4D980027B7AD /* TestPopoverViewController.swift */; };
+		FA7DD5C91F074D85002F4237 /* CornerRadiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27561E4C595A00CAA270 /* CornerRadiusViewController.swift */; };
+		FA7DD5CA1F074D85002F4237 /* YJAlamafireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA860A121E519A7A0084A025 /* YJAlamafireHelper.swift */; };
+		FA7DD5CB1F074D85002F4237 /* QRCodeGenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4C1E7634E200C8C4AE /* QRCodeGenerateViewController.swift */; };
+		FA7DD5CC1F074D85002F4237 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D571E763B2C00C8C4AE /* UIImageExtension.swift */; };
+		FA7DD5CD1F074D85002F4237 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55EEC31E76887900684131 /* UIColorExtension.swift */; };
+		FA7DD5CE1F074D85002F4237 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4A1E76312C00C8C4AE /* QRCodeViewController.swift */; };
+		FA7DD5CF1F074D85002F4237 /* DownloadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FBFD71EA8A5F8009C65BF /* DownloadCell.swift */; };
+		FA7DD5D01F074D85002F4237 /* HZWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F276B1E4C641500CAA270 /* HZWaitingView.m */; };
+		FA7DD5D11F074D85002F4237 /* BSCycleTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27751E4C644B00CAA270 /* BSCycleTextView.m */; };
+		FA7DD5D21F074D85002F4237 /* CommonTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDCA551E724B9A0075492D /* CommonTestViewController.swift */; };
+		FA7DD5D31F074D85002F4237 /* UDPClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A4001E80F64100171770 /* UDPClientViewController.swift */; };
+		FA7DD5D41F074D85002F4237 /* GifView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F274C1E4C594200CAA270 /* GifView.m */; };
+		FA7DD5D51F074D85002F4237 /* DYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27591E4C59A100CAA270 /* DYMainViewController.swift */; };
+		FA7DD5D61F074D85002F4237 /* CGContextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27461E4C592700CAA270 /* CGContextVC.swift */; };
+		FA7DD5D71F074D85002F4237 /* TestDownloadingCircleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3756601E948860009938AE /* TestDownloadingCircleVC.swift */; };
+		FA7DD5D81F074D85002F4237 /* BatchUploadPicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BF1471EB8290F000A37AD /* BatchUploadPicViewController.swift */; };
+		FA7DD5D91F074D85002F4237 /* LoginInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A54D1E836A1600171770 /* LoginInfoModel.swift */; };
+		FA7DD5DA1F074D85002F4237 /* TestSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F31E8B4DA90027B7AD /* TestSplitViewController.swift */; };
+		FA7DD5DB1F074D85002F4237 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A5491E8369C300171770 /* LoginViewModel.swift */; };
+		FA7DD5DC1F074D85002F4237 /* HZPhotoGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27671E4C641500CAA270 /* HZPhotoGroup.m */; };
+		FA7DD5DD1F074D85002F4237 /* DownloadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E409F1EA8A70800BBD804 /* DownloadModel.swift */; };
+		FA7DD5DE1F074D85002F4237 /* HZPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27651E4C641500CAA270 /* HZPhotoBrowserView.m */; };
+		FA7DD5DF1F074D85002F4237 /* PublicMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDCA571E7287700075492D /* PublicMethod.swift */; };
+		FA7DD5E01F074D85002F4237 /* YJDownloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3756621E9488D7009938AE /* YJDownloading.swift */; };
+		FA7DD5E11F074D85002F4237 /* CGContextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27451E4C592700CAA270 /* CGContextView.swift */; };
+		FA7DD5E21F074D85002F4237 /* PlayGifVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F274E1E4C594200CAA270 /* PlayGifVC.swift */; };
+		FA7DD5E31F074D85002F4237 /* PictureBrowsingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27541E4C595300CAA270 /* PictureBrowsingViewController.swift */; };
+		FA7DD5E41F074D85002F4237 /* DYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F275E1E4C59F200CAA270 /* DYHomeViewController.swift */; };
+		FA7DD5E51F074D85002F4237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F270B1E4C32B700CAA270 /* AppDelegate.swift */; };
+		FA7DD5E61F074D85002F4237 /* SnapDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A40F1E82224400171770 /* SnapDetailViewController.swift */; };
+		FA7DD5E71F074D85002F4237 /* RxSwiftTableviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A41B1E825AC000171770 /* RxSwiftTableviewVC.swift */; };
+		FA7DD5E81F074D85002F4237 /* YJSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A26C1EA1EF9000B0A071 /* YJSlider.swift */; };
+		FA7DD5E91F074D85002F4237 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F273F1E4C58F400CAA270 /* Constant.swift */; };
+		FA7DD5EB1F074D85002F4237 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA860A151E51A8DB0084A025 /* Alamofire.framework */; };
+		FA7DD5EC1F074D85002F4237 /* Pods_TestSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */; };
+		FA7DD5EE1F074D85002F4237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3F27141E4C32B700CAA270 /* LaunchScreen.storyboard */; };
+		FA7DD5EF1F074D85002F4237 /* BigFileDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5FBFD31EA87D9D009C65BF /* BigFileDownloadViewController.xib */; };
+		FA7DD5F01F074D85002F4237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3F27121E4C32B700CAA270 /* Assets.xcassets */; };
+		FA7DD5F11F074D85002F4237 /* Icon_SaoLineOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF8951E766C0400B92597 /* Icon_SaoLineOn@2x.png */; };
+		FA7DD5F21F074D85002F4237 /* Icon_SaoLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF8941E766C0400B92597 /* Icon_SaoLine@2x.png */; };
+		FA7DD5F31F074D85002F4237 /* whiteplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3F276C1E4C641500CAA270 /* whiteplaceholder.png */; };
+		FA7DD5F41F074D85002F4237 /* 001-expected.png in Resources */ = {isa = PBXBuildFile; fileRef = FA46E4681EA05FA100372880 /* 001-expected.png */; };
+		FA7DD5F51F074D85002F4237 /* DownloadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5FBFD81EA8A5F8009C65BF /* DownloadCell.xib */; };
+		FA7DD5F61F074D85002F4237 /* 8k.png in Resources */ = {isa = PBXBuildFile; fileRef = FA32A4081E82149800171770 /* 8k.png */; };
+		FA7DD5F71F074D85002F4237 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3BF1491EB85833000A37AD /* 1.png */; };
+		FA7DD5F81F074D85002F4237 /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA32A4021E8102DD00171770 /* test.jpeg */; };
+		FA7DD5F91F074D85002F4237 /* 1533461388039947.gif in Resources */ = {isa = PBXBuildFile; fileRef = FA3F274D1E4C594200CAA270 /* 1533461388039947.gif */; };
+		FA7DD5FA1F074D85002F4237 /* QRCodeRead.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF89B1E766C0D00B92597 /* QRCodeRead.wav */; };
+		FA7DD5FB1F074D85002F4237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3F270F1E4C32B700CAA270 /* Main.storyboard */; };
+		FA7DD5FC1F074D85002F4237 /* 35k.png in Resources */ = {isa = PBXBuildFile; fileRef = FA32A40A1E8214A700171770 /* 35k.png */; };
+		FA7DD5FD1F074D85002F4237 /* Icon_SaoYiSao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF8961E766C0400B92597 /* Icon_SaoYiSao@2x.png */; };
+		FA7DD5FE1F074D85002F4237 /*  011_扫描二维码_失败.png in Resources */ = {isa = PBXBuildFile; fileRef = FA46E46A1EA05FCB00372880 /*  011_扫描二维码_失败.png */; };
+		FA7DD5FF1F074D85002F4237 /* RxSwift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA32A4161E82571200171770 /* RxSwift.storyboard */; };
+		FA7DD60A1F074FAA002F4237 /* TestSwift_test-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA7DD6091F074FAA002F4237 /* TestSwift_test-Info.plist */; };
+		FA7DD60B1F0750B3002F4237 /* TestSwift_dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA81AE931F07370000285DB3 /* TestSwift_dev-Info.plist */; };
+		FA81AE401F0736FF00285DB3 /* AnimationTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27491E4C593700CAA270 /* AnimationTextVC.swift */; };
+		FA81AE411F0736FF00285DB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F270D1E4C32B700CAA270 /* ViewController.swift */; };
+		FA81AE421F0736FF00285DB3 /* PoPMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27431E4C591700CAA270 /* PoPMenuViewController.swift */; };
+		FA81AE431F0736FF00285DB3 /* YJDownloadProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FBFD51EA87EFA009C65BF /* YJDownloadProgress.swift */; };
+		FA81AE441F0736FF00285DB3 /* SnapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A40D1E821D4A00171770 /* SnapKitViewController.swift */; };
+		FA81AE451F0736FF00285DB3 /* TestPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F51E8B51A60027B7AD /* TestPadViewController.swift */; };
+		FA81AE461F0736FF00285DB3 /* BigFileDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FBFD11EA87D75009C65BF /* BigFileDownloadViewController.swift */; };
+		FA81AE471F0736FF00285DB3 /* RxSwiftLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A41A1E825AC000171770 /* RxSwiftLoginViewController.swift */; };
+		FA81AE481F0736FF00285DB3 /* HZPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27621E4C641500CAA270 /* HZPhotoBrowser.m */; };
+		FA81AE491F0736FF00285DB3 /* NSString+BSExt.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27771E4C644B00CAA270 /* NSString+BSExt.m */; };
+		FA81AE4A1F0736FF00285DB3 /* HZPhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27691E4C641500CAA270 /* HZPhotoItem.m */; };
+		FA81AE4B1F0736FF00285DB3 /* MyLeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27391E4C584900CAA270 /* MyLeftMenuViewController.swift */; };
+		FA81AE4C1F0736FF00285DB3 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6327101E6FB1FA009F1CE7 /* ScrollViewController.swift */; };
+		FA81AE4D1F0736FF00285DB3 /* MyRightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F273B1E4C588500CAA270 /* MyRightMenuViewController.swift */; };
+		FA81AE4E1F0736FF00285DB3 /* YJSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A26A1EA1EF8600B0A071 /* YJSliderViewController.swift */; };
+		FA81AE4F1F0736FF00285DB3 /* DYDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F275A1E4C59A100CAA270 /* DYDefine.swift */; };
+		FA81AE501F0736FF00285DB3 /* QRCodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4E1E7634F000C8C4AE /* QRCodeScanViewController.swift */; };
+		FA81AE511F0736FF00285DB3 /* CycleBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27521E4C594900CAA270 /* CycleBannerViewController.swift */; };
+		FA81AE521F0736FF00285DB3 /* DBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FA22F8121EA456B50027DD58 /* DBSlider.m */; };
+		FA81AE531F0736FF00285DB3 /* QRCodeShowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55EEC11E76863700684131 /* QRCodeShowInfoView.swift */; };
+		FA81AE541F0736FF00285DB3 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A54B1E8369E200171770 /* TableViewModel.swift */; };
+		FA81AE551F0736FF00285DB3 /* TestPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F11E8B4D980027B7AD /* TestPopoverViewController.swift */; };
+		FA81AE561F0736FF00285DB3 /* CornerRadiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27561E4C595A00CAA270 /* CornerRadiusViewController.swift */; };
+		FA81AE571F0736FF00285DB3 /* YJAlamafireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA860A121E519A7A0084A025 /* YJAlamafireHelper.swift */; };
+		FA81AE581F0736FF00285DB3 /* QRCodeGenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4C1E7634E200C8C4AE /* QRCodeGenerateViewController.swift */; };
+		FA81AE591F0736FF00285DB3 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D571E763B2C00C8C4AE /* UIImageExtension.swift */; };
+		FA81AE5A1F0736FF00285DB3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55EEC31E76887900684131 /* UIColorExtension.swift */; };
+		FA81AE5B1F0736FF00285DB3 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4A1E76312C00C8C4AE /* QRCodeViewController.swift */; };
+		FA81AE5C1F0736FF00285DB3 /* DownloadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FBFD71EA8A5F8009C65BF /* DownloadCell.swift */; };
+		FA81AE5D1F0736FF00285DB3 /* HZWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F276B1E4C641500CAA270 /* HZWaitingView.m */; };
+		FA81AE5E1F0736FF00285DB3 /* BSCycleTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27751E4C644B00CAA270 /* BSCycleTextView.m */; };
+		FA81AE5F1F0736FF00285DB3 /* CommonTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDCA551E724B9A0075492D /* CommonTestViewController.swift */; };
+		FA81AE601F0736FF00285DB3 /* UDPClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A4001E80F64100171770 /* UDPClientViewController.swift */; };
+		FA81AE611F0736FF00285DB3 /* GifView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F274C1E4C594200CAA270 /* GifView.m */; };
+		FA81AE621F0736FF00285DB3 /* DYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27591E4C59A100CAA270 /* DYMainViewController.swift */; };
+		FA81AE631F0736FF00285DB3 /* CGContextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27461E4C592700CAA270 /* CGContextVC.swift */; };
+		FA81AE641F0736FF00285DB3 /* TestDownloadingCircleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3756601E948860009938AE /* TestDownloadingCircleVC.swift */; };
+		FA81AE651F0736FF00285DB3 /* BatchUploadPicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BF1471EB8290F000A37AD /* BatchUploadPicViewController.swift */; };
+		FA81AE661F0736FF00285DB3 /* LoginInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A54D1E836A1600171770 /* LoginInfoModel.swift */; };
+		FA81AE671F0736FF00285DB3 /* TestSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F31E8B4DA90027B7AD /* TestSplitViewController.swift */; };
+		FA81AE681F0736FF00285DB3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A5491E8369C300171770 /* LoginViewModel.swift */; };
+		FA81AE691F0736FF00285DB3 /* HZPhotoGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27671E4C641500CAA270 /* HZPhotoGroup.m */; };
+		FA81AE6A1F0736FF00285DB3 /* DownloadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5E409F1EA8A70800BBD804 /* DownloadModel.swift */; };
+		FA81AE6B1F0736FF00285DB3 /* HZPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27651E4C641500CAA270 /* HZPhotoBrowserView.m */; };
+		FA81AE6C1F0736FF00285DB3 /* PublicMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDCA571E7287700075492D /* PublicMethod.swift */; };
+		FA81AE6D1F0736FF00285DB3 /* YJDownloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3756621E9488D7009938AE /* YJDownloading.swift */; };
+		FA81AE6E1F0736FF00285DB3 /* CGContextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27451E4C592700CAA270 /* CGContextView.swift */; };
+		FA81AE6F1F0736FF00285DB3 /* PlayGifVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F274E1E4C594200CAA270 /* PlayGifVC.swift */; };
+		FA81AE701F0736FF00285DB3 /* PictureBrowsingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27541E4C595300CAA270 /* PictureBrowsingViewController.swift */; };
+		FA81AE711F0736FF00285DB3 /* DYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F275E1E4C59F200CAA270 /* DYHomeViewController.swift */; };
+		FA81AE721F0736FF00285DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F270B1E4C32B700CAA270 /* AppDelegate.swift */; };
+		FA81AE731F0736FF00285DB3 /* SnapDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A40F1E82224400171770 /* SnapDetailViewController.swift */; };
+		FA81AE741F0736FF00285DB3 /* RxSwiftTableviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A41B1E825AC000171770 /* RxSwiftTableviewVC.swift */; };
+		FA81AE751F0736FF00285DB3 /* YJSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A26C1EA1EF9000B0A071 /* YJSlider.swift */; };
+		FA81AE761F0736FF00285DB3 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F273F1E4C58F400CAA270 /* Constant.swift */; };
+		FA81AE781F0736FF00285DB3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA860A151E51A8DB0084A025 /* Alamofire.framework */; };
+		FA81AE791F0736FF00285DB3 /* Pods_TestSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */; };
+		FA81AE7B1F0736FF00285DB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3F27141E4C32B700CAA270 /* LaunchScreen.storyboard */; };
+		FA81AE7C1F0736FF00285DB3 /* BigFileDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5FBFD31EA87D9D009C65BF /* BigFileDownloadViewController.xib */; };
+		FA81AE7D1F0736FF00285DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3F27121E4C32B700CAA270 /* Assets.xcassets */; };
+		FA81AE7E1F0736FF00285DB3 /* Icon_SaoLineOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF8951E766C0400B92597 /* Icon_SaoLineOn@2x.png */; };
+		FA81AE7F1F0736FF00285DB3 /* Icon_SaoLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF8941E766C0400B92597 /* Icon_SaoLine@2x.png */; };
+		FA81AE801F0736FF00285DB3 /* whiteplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3F276C1E4C641500CAA270 /* whiteplaceholder.png */; };
+		FA81AE811F0736FF00285DB3 /* 001-expected.png in Resources */ = {isa = PBXBuildFile; fileRef = FA46E4681EA05FA100372880 /* 001-expected.png */; };
+		FA81AE821F0736FF00285DB3 /* DownloadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5FBFD81EA8A5F8009C65BF /* DownloadCell.xib */; };
+		FA81AE831F0736FF00285DB3 /* 8k.png in Resources */ = {isa = PBXBuildFile; fileRef = FA32A4081E82149800171770 /* 8k.png */; };
+		FA81AE841F0736FF00285DB3 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3BF1491EB85833000A37AD /* 1.png */; };
+		FA81AE851F0736FF00285DB3 /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA32A4021E8102DD00171770 /* test.jpeg */; };
+		FA81AE861F0736FF00285DB3 /* 1533461388039947.gif in Resources */ = {isa = PBXBuildFile; fileRef = FA3F274D1E4C594200CAA270 /* 1533461388039947.gif */; };
+		FA81AE871F0736FF00285DB3 /* QRCodeRead.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF89B1E766C0D00B92597 /* QRCodeRead.wav */; };
+		FA81AE881F0736FF00285DB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3F270F1E4C32B700CAA270 /* Main.storyboard */; };
+		FA81AE891F0736FF00285DB3 /* 35k.png in Resources */ = {isa = PBXBuildFile; fileRef = FA32A40A1E8214A700171770 /* 35k.png */; };
+		FA81AE8A1F0736FF00285DB3 /* Icon_SaoYiSao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6EF8961E766C0400B92597 /* Icon_SaoYiSao@2x.png */; };
+		FA81AE8B1F0736FF00285DB3 /*  011_扫描二维码_失败.png in Resources */ = {isa = PBXBuildFile; fileRef = FA46E46A1EA05FCB00372880 /*  011_扫描二维码_失败.png */; };
+		FA81AE8C1F0736FF00285DB3 /* RxSwift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA32A4161E82571200171770 /* RxSwift.storyboard */; };
 		FA83C4F21E8B4D980027B7AD /* TestPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F11E8B4D980027B7AD /* TestPopoverViewController.swift */; };
 		FA83C4F41E8B4DA90027B7AD /* TestSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F31E8B4DA90027B7AD /* TestSplitViewController.swift */; };
 		FA83C4F61E8B51A60027B7AD /* TestPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F51E8B51A60027B7AD /* TestPadViewController.swift */; };
@@ -84,6 +251,10 @@
 		0E693CECE1112068234B7447 /* Pods-TestSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestSwift/Pods-TestSwift.release.xcconfig"; sourceTree = "<group>"; };
 		49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9596105D0566442E5C180B7E /* Pods-TestSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestSwift/Pods-TestSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		FA07A26A1EA1EF8600B0A071 /* YJSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJSliderViewController.swift; sourceTree = "<group>"; };
+		FA07A26C1EA1EF9000B0A071 /* YJSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJSlider.swift; sourceTree = "<group>"; };
+		FA22F8111EA456B50027DD58 /* DBSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSlider.h; sourceTree = "<group>"; };
+		FA22F8121EA456B50027DD58 /* DBSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSlider.m; sourceTree = "<group>"; };
 		FA32A4001E80F64100171770 /* UDPClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPClientViewController.swift; sourceTree = "<group>"; };
 		FA32A4021E8102DD00171770 /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpeg; sourceTree = "<group>"; };
 		FA32A4081E82149800171770 /* 8k.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8k.png; sourceTree = "<group>"; };
@@ -96,6 +267,10 @@
 		FA32A5491E8369C300171770 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FA32A54B1E8369E200171770 /* TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 		FA32A54D1E836A1600171770 /* LoginInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInfoModel.swift; sourceTree = "<group>"; };
+		FA3756601E948860009938AE /* TestDownloadingCircleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDownloadingCircleVC.swift; sourceTree = "<group>"; };
+		FA3756621E9488D7009938AE /* YJDownloading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJDownloading.swift; sourceTree = "<group>"; };
+		FA3BF1471EB8290F000A37AD /* BatchUploadPicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatchUploadPicViewController.swift; sourceTree = "<group>"; };
+		FA3BF1491EB85833000A37AD /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		FA3F27081E4C32B700CAA270 /* TestSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3F270B1E4C32B700CAA270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3F270D1E4C32B700CAA270 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,13 +315,25 @@
 		FA3F27751E4C644B00CAA270 /* BSCycleTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSCycleTextView.m; sourceTree = "<group>"; };
 		FA3F27761E4C644B00CAA270 /* NSString+BSExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BSExt.h"; sourceTree = "<group>"; };
 		FA3F27771E4C644B00CAA270 /* NSString+BSExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BSExt.m"; sourceTree = "<group>"; };
+		FA46E4681EA05FA100372880 /* 001-expected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "001-expected.png"; sourceTree = "<group>"; };
+		FA46E46A1EA05FCB00372880 /*  011_扫描二维码_失败.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = " 011_扫描二维码_失败.png"; sourceTree = "<group>"; };
 		FA55EEC11E76863700684131 /* QRCodeShowInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeShowInfoView.swift; path = Rescorces/QRCodeShowInfoView.swift; sourceTree = "<group>"; };
 		FA55EEC31E76887900684131 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		FA5E409F1EA8A70800BBD804 /* DownloadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadModel.swift; sourceTree = "<group>"; };
+		FA5FBFD11EA87D75009C65BF /* BigFileDownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigFileDownloadViewController.swift; sourceTree = "<group>"; };
+		FA5FBFD31EA87D9D009C65BF /* BigFileDownloadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BigFileDownloadViewController.xib; sourceTree = "<group>"; };
+		FA5FBFD51EA87EFA009C65BF /* YJDownloadProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJDownloadProgress.swift; sourceTree = "<group>"; };
+		FA5FBFD71EA8A5F8009C65BF /* DownloadCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadCell.swift; sourceTree = "<group>"; };
+		FA5FBFD81EA8A5F8009C65BF /* DownloadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadCell.xib; sourceTree = "<group>"; };
 		FA6327101E6FB1FA009F1CE7 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		FA6EF8941E766C0400B92597 /* Icon_SaoLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_SaoLine@2x.png"; sourceTree = "<group>"; };
 		FA6EF8951E766C0400B92597 /* Icon_SaoLineOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_SaoLineOn@2x.png"; sourceTree = "<group>"; };
 		FA6EF8961E766C0400B92597 /* Icon_SaoYiSao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_SaoYiSao@2x.png"; sourceTree = "<group>"; };
 		FA6EF89B1E766C0D00B92597 /* QRCodeRead.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = QRCodeRead.wav; sourceTree = "<group>"; };
+		FA7DD6051F074D85002F4237 /* TestSwift_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSwift_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7DD6091F074FAA002F4237 /* TestSwift_test-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TestSwift_test-Info.plist"; sourceTree = "<group>"; };
+		FA81AE921F0736FF00285DB3 /* TestSwift_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSwift_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA81AE931F07370000285DB3 /* TestSwift_dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TestSwift_dev-Info.plist"; path = "/Users/MACBOOK/Documents/私人/个人文档/GitHub项目/TestSwift/TestSwift_dev-Info.plist"; sourceTree = "<absolute>"; };
 		FA83C4F11E8B4D980027B7AD /* TestPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPopoverViewController.swift; sourceTree = "<group>"; };
 		FA83C4F31E8B4DA90027B7AD /* TestSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSplitViewController.swift; sourceTree = "<group>"; };
 		FA83C4F51E8B51A60027B7AD /* TestPadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPadViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +364,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA7DD5EA1F074D85002F4237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7DD5EB1F074D85002F4237 /* Alamofire.framework in Frameworks */,
+				FA7DD5EC1F074D85002F4237 /* Pods_TestSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA81AE771F0736FF00285DB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA81AE781F0736FF00285DB3 /* Alamofire.framework in Frameworks */,
+				FA81AE791F0736FF00285DB3 /* Pods_TestSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -196,6 +401,17 @@
 				0E693CECE1112068234B7447 /* Pods-TestSwift.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA07A2691EA1EF4800B0A071 /* UISlider触摸区域放大 */ = {
+			isa = PBXGroup;
+			children = (
+				FA22F8111EA456B50027DD58 /* DBSlider.h */,
+				FA22F8121EA456B50027DD58 /* DBSlider.m */,
+				FA07A26C1EA1EF9000B0A071 /* YJSlider.swift */,
+				FA07A26A1EA1EF8600B0A071 /* YJSliderViewController.swift */,
+			);
+			path = "UISlider触摸区域放大";
 			sourceTree = "<group>";
 		};
 		FA32A3FB1E80B72900171770 /* UDP 发图片 */ = {
@@ -265,6 +481,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FA37565F1E94881B009938AE /* 环形下载进度 */ = {
+			isa = PBXGroup;
+			children = (
+				FA46E46A1EA05FCB00372880 /*  011_扫描二维码_失败.png */,
+				FA46E4681EA05FA100372880 /* 001-expected.png */,
+				FA3756601E948860009938AE /* TestDownloadingCircleVC.swift */,
+				FA3756621E9488D7009938AE /* YJDownloading.swift */,
+			);
+			path = "环形下载进度";
+			sourceTree = "<group>";
+		};
+		FA3BF1461EB828E7000A37AD /* 批量上传图片 */ = {
+			isa = PBXGroup;
+			children = (
+				FA3BF1491EB85833000A37AD /* 1.png */,
+				FA3BF1471EB8290F000A37AD /* BatchUploadPicViewController.swift */,
+			);
+			path = "批量上传图片";
+			sourceTree = "<group>";
+		};
 		FA3F26FF1E4C32B700CAA270 = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +509,8 @@
 				FA3F27091E4C32B700CAA270 /* Products */,
 				AA340946A6AE46E903CC041E /* Pods */,
 				A288A701D673BEBC08D0A1C8 /* Frameworks */,
+				FA81AE931F07370000285DB3 /* TestSwift_dev-Info.plist */,
+				FA7DD6091F074FAA002F4237 /* TestSwift_test-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,6 +519,8 @@
 			children = (
 				FA3F27081E4C32B700CAA270 /* TestSwift.app */,
 				FA3F271C1E4C32B700CAA270 /* TestSwiftUITests.xctest */,
+				FA81AE921F0736FF00285DB3 /* TestSwift_dev.app */,
+				FA7DD6051F074D85002F4237 /* TestSwift_test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -288,6 +528,10 @@
 		FA3F270A1E4C32B700CAA270 /* TestSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FA3BF1461EB828E7000A37AD /* 批量上传图片 */,
+				FA5FBFD01EA87D45009C65BF /* 多任务下载 */,
+				FA07A2691EA1EF4800B0A071 /* UISlider触摸区域放大 */,
+				FA37565F1E94881B009938AE /* 环形下载进度 */,
 				FA83C4F01E8B4D760027B7AD /* Pad测试 */,
 				FA32A4111E82557B00171770 /* RxSwift使用 */,
 				FA32A40C1E821D2700171770 /* SnapKit布局 */,
@@ -296,7 +540,7 @@
 				FADDCA541E724B740075492D /* 通用测试页面 */,
 				FA63270F1E6FB1B3009F1CE7 /* 侧边固定滑动 */,
 				FA3F27321E4C3D0C00CAA270 /* Common */,
-				FA3F27581E4C597F00CAA270 /* 仿斗鱼 */,
+				FA3F27581E4C597F00CAA270 /* 仿斗鱼(未实现) */,
 				FA3F27331E4C3D2100CAA270 /* Main */,
 				FA3F27311E4C3CF700CAA270 /* PopView－边角弹出箭头框 */,
 				FA3F27301E4C3CE600CAA270 /* CGContext－直线、虚线、圆 */,
@@ -416,13 +660,14 @@
 			path = "侧边栏";
 			sourceTree = "<group>";
 		};
-		FA3F27581E4C597F00CAA270 /* 仿斗鱼 */ = {
+		FA3F27581E4C597F00CAA270 /* 仿斗鱼(未实现) */ = {
 			isa = PBXGroup;
 			children = (
 				FA3F275D1E4C59B000CAA270 /* 首页 */,
 				FA3F27591E4C59A100CAA270 /* DYMainViewController.swift */,
 				FA3F275A1E4C59A100CAA270 /* DYDefine.swift */,
 			);
+			name = "仿斗鱼(未实现)";
 			path = "仿斗鱼";
 			sourceTree = "<group>";
 		};
@@ -462,6 +707,20 @@
 				FA3F27771E4C644B00CAA270 /* NSString+BSExt.m */,
 			);
 			path = BSCycleTextView;
+			sourceTree = "<group>";
+		};
+		FA5FBFD01EA87D45009C65BF /* 多任务下载 */ = {
+			isa = PBXGroup;
+			children = (
+				FA5FBFD11EA87D75009C65BF /* BigFileDownloadViewController.swift */,
+				FA5FBFD31EA87D9D009C65BF /* BigFileDownloadViewController.xib */,
+				FA5FBFD51EA87EFA009C65BF /* YJDownloadProgress.swift */,
+				FA5FBFD71EA8A5F8009C65BF /* DownloadCell.swift */,
+				FA5FBFD81EA8A5F8009C65BF /* DownloadCell.xib */,
+				FA5E409F1EA8A70800BBD804 /* DownloadModel.swift */,
+			);
+			name = "多任务下载";
+			path = "大文件下载";
 			sourceTree = "<group>";
 		};
 		FA63270F1E6FB1B3009F1CE7 /* 侧边固定滑动 */ = {
@@ -570,6 +829,46 @@
 			productReference = FA3F271C1E4C32B700CAA270 /* TestSwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FA7DD5B01F074D85002F4237 /* TestSwift_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7DD6021F074D85002F4237 /* Build configuration list for PBXNativeTarget "TestSwift_test" */;
+			buildPhases = (
+				FA7DD5B11F074D85002F4237 /* [CP] Check Pods Manifest.lock */,
+				FA7DD5B21F074D85002F4237 /* Sources */,
+				FA7DD5EA1F074D85002F4237 /* Frameworks */,
+				FA7DD5ED1F074D85002F4237 /* Resources */,
+				FA7DD6001F074D85002F4237 /* [CP] Embed Pods Frameworks */,
+				FA7DD6011F074D85002F4237 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestSwift_test;
+			productName = TestSwift;
+			productReference = FA7DD6051F074D85002F4237 /* TestSwift_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA81AE3D1F0736FF00285DB3 /* TestSwift_dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA81AE8F1F0736FF00285DB3 /* Build configuration list for PBXNativeTarget "TestSwift_dev" */;
+			buildPhases = (
+				FA81AE3E1F0736FF00285DB3 /* [CP] Check Pods Manifest.lock */,
+				FA81AE3F1F0736FF00285DB3 /* Sources */,
+				FA81AE771F0736FF00285DB3 /* Frameworks */,
+				FA81AE7A1F0736FF00285DB3 /* Resources */,
+				FA81AE8D1F0736FF00285DB3 /* [CP] Embed Pods Frameworks */,
+				FA81AE8E1F0736FF00285DB3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestSwift_dev;
+			productName = TestSwift;
+			productReference = FA81AE921F0736FF00285DB3 /* TestSwift_dev.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -592,6 +891,12 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = FA3F27071E4C32B700CAA270;
 					};
+					FA7DD5B01F074D85002F4237 = {
+						DevelopmentTeam = G7KRDXK4J7;
+					};
+					FA81AE3D1F0736FF00285DB3 = {
+						DevelopmentTeam = G7KRDXK4J7;
+					};
 				};
 			};
 			buildConfigurationList = FA3F27031E4C32B700CAA270 /* Build configuration list for PBXProject "TestSwift" */;
@@ -609,6 +914,8 @@
 			targets = (
 				FA3F27071E4C32B700CAA270 /* TestSwift */,
 				FA3F271B1E4C32B700CAA270 /* TestSwiftUITests */,
+				FA81AE3D1F0736FF00285DB3 /* TestSwift_dev */,
+				FA7DD5B01F074D85002F4237 /* TestSwift_test */,
 			);
 		};
 /* End PBXProject section */
@@ -619,17 +926,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3F27161E4C32B700CAA270 /* LaunchScreen.storyboard in Resources */,
+				FA5FBFD41EA87D9D009C65BF /* BigFileDownloadViewController.xib in Resources */,
 				FA3F27131E4C32B700CAA270 /* Assets.xcassets in Resources */,
 				FA6EF8991E766C0400B92597 /* Icon_SaoLineOn@2x.png in Resources */,
 				FA6EF8981E766C0400B92597 /* Icon_SaoLine@2x.png in Resources */,
 				FA3F27721E4C641500CAA270 /* whiteplaceholder.png in Resources */,
+				FA46E4691EA05FA100372880 /* 001-expected.png in Resources */,
+				FA5FBFDA1EA8A5F8009C65BF /* DownloadCell.xib in Resources */,
 				FA32A4091E82149800171770 /* 8k.png in Resources */,
+				FA3BF14A1EB85833000A37AD /* 1.png in Resources */,
 				FA32A4031E8102DD00171770 /* test.jpeg in Resources */,
 				FA3F27501E4C594200CAA270 /* 1533461388039947.gif in Resources */,
 				FA6EF89C1E766C0D00B92597 /* QRCodeRead.wav in Resources */,
 				FA3F27111E4C32B700CAA270 /* Main.storyboard in Resources */,
 				FA32A40B1E8214A700171770 /* 35k.png in Resources */,
 				FA6EF89A1E766C0400B92597 /* Icon_SaoYiSao@2x.png in Resources */,
+				FA46E46B1EA05FCB00372880 /*  011_扫描二维码_失败.png in Resources */,
 				FA32A4171E82571200171770 /* RxSwift.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -638,6 +950,58 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7DD5ED1F074D85002F4237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7DD5EE1F074D85002F4237 /* LaunchScreen.storyboard in Resources */,
+				FA7DD5EF1F074D85002F4237 /* BigFileDownloadViewController.xib in Resources */,
+				FA7DD5F01F074D85002F4237 /* Assets.xcassets in Resources */,
+				FA7DD5F11F074D85002F4237 /* Icon_SaoLineOn@2x.png in Resources */,
+				FA7DD5F21F074D85002F4237 /* Icon_SaoLine@2x.png in Resources */,
+				FA7DD5F31F074D85002F4237 /* whiteplaceholder.png in Resources */,
+				FA7DD5F41F074D85002F4237 /* 001-expected.png in Resources */,
+				FA7DD5F51F074D85002F4237 /* DownloadCell.xib in Resources */,
+				FA7DD5F61F074D85002F4237 /* 8k.png in Resources */,
+				FA7DD5F71F074D85002F4237 /* 1.png in Resources */,
+				FA7DD5F81F074D85002F4237 /* test.jpeg in Resources */,
+				FA7DD5F91F074D85002F4237 /* 1533461388039947.gif in Resources */,
+				FA7DD5FA1F074D85002F4237 /* QRCodeRead.wav in Resources */,
+				FA7DD5FB1F074D85002F4237 /* Main.storyboard in Resources */,
+				FA7DD5FC1F074D85002F4237 /* 35k.png in Resources */,
+				FA7DD60A1F074FAA002F4237 /* TestSwift_test-Info.plist in Resources */,
+				FA7DD5FD1F074D85002F4237 /* Icon_SaoYiSao@2x.png in Resources */,
+				FA7DD5FE1F074D85002F4237 /*  011_扫描二维码_失败.png in Resources */,
+				FA7DD5FF1F074D85002F4237 /* RxSwift.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA81AE7A1F0736FF00285DB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA81AE7B1F0736FF00285DB3 /* LaunchScreen.storyboard in Resources */,
+				FA81AE7C1F0736FF00285DB3 /* BigFileDownloadViewController.xib in Resources */,
+				FA81AE7D1F0736FF00285DB3 /* Assets.xcassets in Resources */,
+				FA81AE7E1F0736FF00285DB3 /* Icon_SaoLineOn@2x.png in Resources */,
+				FA81AE7F1F0736FF00285DB3 /* Icon_SaoLine@2x.png in Resources */,
+				FA81AE801F0736FF00285DB3 /* whiteplaceholder.png in Resources */,
+				FA81AE811F0736FF00285DB3 /* 001-expected.png in Resources */,
+				FA81AE821F0736FF00285DB3 /* DownloadCell.xib in Resources */,
+				FA81AE831F0736FF00285DB3 /* 8k.png in Resources */,
+				FA81AE841F0736FF00285DB3 /* 1.png in Resources */,
+				FA81AE851F0736FF00285DB3 /* test.jpeg in Resources */,
+				FA81AE861F0736FF00285DB3 /* 1533461388039947.gif in Resources */,
+				FA81AE871F0736FF00285DB3 /* QRCodeRead.wav in Resources */,
+				FA81AE881F0736FF00285DB3 /* Main.storyboard in Resources */,
+				FA7DD60B1F0750B3002F4237 /* TestSwift_dev-Info.plist in Resources */,
+				FA81AE891F0736FF00285DB3 /* 35k.png in Resources */,
+				FA81AE8A1F0736FF00285DB3 /* Icon_SaoYiSao@2x.png in Resources */,
+				FA81AE8B1F0736FF00285DB3 /*  011_扫描二维码_失败.png in Resources */,
+				FA81AE8C1F0736FF00285DB3 /* RxSwift.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +1053,96 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		FA7DD5B11F074D85002F4237 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA7DD6001F074D85002F4237 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestSwift/Pods-TestSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA7DD6011F074D85002F4237 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestSwift/Pods-TestSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA81AE3E1F0736FF00285DB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA81AE8D1F0736FF00285DB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestSwift/Pods-TestSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA81AE8E1F0736FF00285DB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestSwift/Pods-TestSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -699,8 +1153,10 @@
 				FA3F274A1E4C593700CAA270 /* AnimationTextVC.swift in Sources */,
 				FA3F270E1E4C32B700CAA270 /* ViewController.swift in Sources */,
 				FA3F27441E4C591700CAA270 /* PoPMenuViewController.swift in Sources */,
+				FA5FBFD61EA87EFA009C65BF /* YJDownloadProgress.swift in Sources */,
 				FA32A40E1E821D4A00171770 /* SnapKitViewController.swift in Sources */,
 				FA83C4F61E8B51A60027B7AD /* TestPadViewController.swift in Sources */,
+				FA5FBFD21EA87D75009C65BF /* BigFileDownloadViewController.swift in Sources */,
 				FA32A41C1E825AC000171770 /* RxSwiftLoginViewController.swift in Sources */,
 				FA3F276D1E4C641500CAA270 /* HZPhotoBrowser.m in Sources */,
 				FA3F27791E4C644B00CAA270 /* NSString+BSExt.m in Sources */,
@@ -708,9 +1164,11 @@
 				FA3F273A1E4C584900CAA270 /* MyLeftMenuViewController.swift in Sources */,
 				FA6327111E6FB1FA009F1CE7 /* ScrollViewController.swift in Sources */,
 				FA3F273D1E4C588500CAA270 /* MyRightMenuViewController.swift in Sources */,
+				FA07A26B1EA1EF8600B0A071 /* YJSliderViewController.swift in Sources */,
 				FA3F275C1E4C59A100CAA270 /* DYDefine.swift in Sources */,
 				FAE61D4F1E7634F000C8C4AE /* QRCodeScanViewController.swift in Sources */,
 				FA3F27531E4C594900CAA270 /* CycleBannerViewController.swift in Sources */,
+				FA22F8131EA456B50027DD58 /* DBSlider.m in Sources */,
 				FA55EEC21E76863700684131 /* QRCodeShowInfoView.swift in Sources */,
 				FA32A54C1E8369E200171770 /* TableViewModel.swift in Sources */,
 				FA83C4F21E8B4D980027B7AD /* TestPopoverViewController.swift in Sources */,
@@ -720,6 +1178,7 @@
 				FAE61D581E763B2C00C8C4AE /* UIImageExtension.swift in Sources */,
 				FA55EEC41E76887900684131 /* UIColorExtension.swift in Sources */,
 				FAE61D4B1E76312C00C8C4AE /* QRCodeViewController.swift in Sources */,
+				FA5FBFD91EA8A5F8009C65BF /* DownloadCell.swift in Sources */,
 				FA3F27711E4C641500CAA270 /* HZWaitingView.m in Sources */,
 				FA3F27781E4C644B00CAA270 /* BSCycleTextView.m in Sources */,
 				FADDCA561E724B9A0075492D /* CommonTestViewController.swift in Sources */,
@@ -727,12 +1186,16 @@
 				FA3F274F1E4C594200CAA270 /* GifView.m in Sources */,
 				FA3F275B1E4C59A100CAA270 /* DYMainViewController.swift in Sources */,
 				FA3F27481E4C592700CAA270 /* CGContextVC.swift in Sources */,
+				FA3756611E948860009938AE /* TestDownloadingCircleVC.swift in Sources */,
+				FA3BF1481EB8290F000A37AD /* BatchUploadPicViewController.swift in Sources */,
 				FA32A54E1E836A1600171770 /* LoginInfoModel.swift in Sources */,
 				FA83C4F41E8B4DA90027B7AD /* TestSplitViewController.swift in Sources */,
 				FA32A54A1E8369C300171770 /* LoginViewModel.swift in Sources */,
 				FA3F276F1E4C641500CAA270 /* HZPhotoGroup.m in Sources */,
+				FA5E40A01EA8A70800BBD804 /* DownloadModel.swift in Sources */,
 				FA3F276E1E4C641500CAA270 /* HZPhotoBrowserView.m in Sources */,
 				FADDCA581E7287700075492D /* PublicMethod.swift in Sources */,
+				FA3756631E9488D7009938AE /* YJDownloading.swift in Sources */,
 				FA3F27471E4C592700CAA270 /* CGContextView.swift in Sources */,
 				FA3F27511E4C594200CAA270 /* PlayGifVC.swift in Sources */,
 				FA3F27551E4C595300CAA270 /* PictureBrowsingViewController.swift in Sources */,
@@ -740,6 +1203,7 @@
 				FA3F270C1E4C32B700CAA270 /* AppDelegate.swift in Sources */,
 				FA32A4101E82224400171770 /* SnapDetailViewController.swift in Sources */,
 				FA32A41D1E825AC000171770 /* RxSwiftTableviewVC.swift in Sources */,
+				FA07A26D1EA1EF9000B0A071 /* YJSlider.swift in Sources */,
 				FA3F27401E4C58F400CAA270 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -749,6 +1213,130 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3F27211E4C32B700CAA270 /* TestSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7DD5B21F074D85002F4237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7DD5B31F074D85002F4237 /* AnimationTextVC.swift in Sources */,
+				FA7DD5B41F074D85002F4237 /* ViewController.swift in Sources */,
+				FA7DD5B51F074D85002F4237 /* PoPMenuViewController.swift in Sources */,
+				FA7DD5B61F074D85002F4237 /* YJDownloadProgress.swift in Sources */,
+				FA7DD5B71F074D85002F4237 /* SnapKitViewController.swift in Sources */,
+				FA7DD5B81F074D85002F4237 /* TestPadViewController.swift in Sources */,
+				FA7DD5B91F074D85002F4237 /* BigFileDownloadViewController.swift in Sources */,
+				FA7DD5BA1F074D85002F4237 /* RxSwiftLoginViewController.swift in Sources */,
+				FA7DD5BB1F074D85002F4237 /* HZPhotoBrowser.m in Sources */,
+				FA7DD5BC1F074D85002F4237 /* NSString+BSExt.m in Sources */,
+				FA7DD5BD1F074D85002F4237 /* HZPhotoItem.m in Sources */,
+				FA7DD5BE1F074D85002F4237 /* MyLeftMenuViewController.swift in Sources */,
+				FA7DD5BF1F074D85002F4237 /* ScrollViewController.swift in Sources */,
+				FA7DD5C01F074D85002F4237 /* MyRightMenuViewController.swift in Sources */,
+				FA7DD5C11F074D85002F4237 /* YJSliderViewController.swift in Sources */,
+				FA7DD5C21F074D85002F4237 /* DYDefine.swift in Sources */,
+				FA7DD5C31F074D85002F4237 /* QRCodeScanViewController.swift in Sources */,
+				FA7DD5C41F074D85002F4237 /* CycleBannerViewController.swift in Sources */,
+				FA7DD5C51F074D85002F4237 /* DBSlider.m in Sources */,
+				FA7DD5C61F074D85002F4237 /* QRCodeShowInfoView.swift in Sources */,
+				FA7DD5C71F074D85002F4237 /* TableViewModel.swift in Sources */,
+				FA7DD5C81F074D85002F4237 /* TestPopoverViewController.swift in Sources */,
+				FA7DD5C91F074D85002F4237 /* CornerRadiusViewController.swift in Sources */,
+				FA7DD5CA1F074D85002F4237 /* YJAlamafireHelper.swift in Sources */,
+				FA7DD5CB1F074D85002F4237 /* QRCodeGenerateViewController.swift in Sources */,
+				FA7DD5CC1F074D85002F4237 /* UIImageExtension.swift in Sources */,
+				FA7DD5CD1F074D85002F4237 /* UIColorExtension.swift in Sources */,
+				FA7DD5CE1F074D85002F4237 /* QRCodeViewController.swift in Sources */,
+				FA7DD5CF1F074D85002F4237 /* DownloadCell.swift in Sources */,
+				FA7DD5D01F074D85002F4237 /* HZWaitingView.m in Sources */,
+				FA7DD5D11F074D85002F4237 /* BSCycleTextView.m in Sources */,
+				FA7DD5D21F074D85002F4237 /* CommonTestViewController.swift in Sources */,
+				FA7DD5D31F074D85002F4237 /* UDPClientViewController.swift in Sources */,
+				FA7DD5D41F074D85002F4237 /* GifView.m in Sources */,
+				FA7DD5D51F074D85002F4237 /* DYMainViewController.swift in Sources */,
+				FA7DD5D61F074D85002F4237 /* CGContextVC.swift in Sources */,
+				FA7DD5D71F074D85002F4237 /* TestDownloadingCircleVC.swift in Sources */,
+				FA7DD5D81F074D85002F4237 /* BatchUploadPicViewController.swift in Sources */,
+				FA7DD5D91F074D85002F4237 /* LoginInfoModel.swift in Sources */,
+				FA7DD5DA1F074D85002F4237 /* TestSplitViewController.swift in Sources */,
+				FA7DD5DB1F074D85002F4237 /* LoginViewModel.swift in Sources */,
+				FA7DD5DC1F074D85002F4237 /* HZPhotoGroup.m in Sources */,
+				FA7DD5DD1F074D85002F4237 /* DownloadModel.swift in Sources */,
+				FA7DD5DE1F074D85002F4237 /* HZPhotoBrowserView.m in Sources */,
+				FA7DD5DF1F074D85002F4237 /* PublicMethod.swift in Sources */,
+				FA7DD5E01F074D85002F4237 /* YJDownloading.swift in Sources */,
+				FA7DD5E11F074D85002F4237 /* CGContextView.swift in Sources */,
+				FA7DD5E21F074D85002F4237 /* PlayGifVC.swift in Sources */,
+				FA7DD5E31F074D85002F4237 /* PictureBrowsingViewController.swift in Sources */,
+				FA7DD5E41F074D85002F4237 /* DYHomeViewController.swift in Sources */,
+				FA7DD5E51F074D85002F4237 /* AppDelegate.swift in Sources */,
+				FA7DD5E61F074D85002F4237 /* SnapDetailViewController.swift in Sources */,
+				FA7DD5E71F074D85002F4237 /* RxSwiftTableviewVC.swift in Sources */,
+				FA7DD5E81F074D85002F4237 /* YJSlider.swift in Sources */,
+				FA7DD5E91F074D85002F4237 /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA81AE3F1F0736FF00285DB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA81AE401F0736FF00285DB3 /* AnimationTextVC.swift in Sources */,
+				FA81AE411F0736FF00285DB3 /* ViewController.swift in Sources */,
+				FA81AE421F0736FF00285DB3 /* PoPMenuViewController.swift in Sources */,
+				FA81AE431F0736FF00285DB3 /* YJDownloadProgress.swift in Sources */,
+				FA81AE441F0736FF00285DB3 /* SnapKitViewController.swift in Sources */,
+				FA81AE451F0736FF00285DB3 /* TestPadViewController.swift in Sources */,
+				FA81AE461F0736FF00285DB3 /* BigFileDownloadViewController.swift in Sources */,
+				FA81AE471F0736FF00285DB3 /* RxSwiftLoginViewController.swift in Sources */,
+				FA81AE481F0736FF00285DB3 /* HZPhotoBrowser.m in Sources */,
+				FA81AE491F0736FF00285DB3 /* NSString+BSExt.m in Sources */,
+				FA81AE4A1F0736FF00285DB3 /* HZPhotoItem.m in Sources */,
+				FA81AE4B1F0736FF00285DB3 /* MyLeftMenuViewController.swift in Sources */,
+				FA81AE4C1F0736FF00285DB3 /* ScrollViewController.swift in Sources */,
+				FA81AE4D1F0736FF00285DB3 /* MyRightMenuViewController.swift in Sources */,
+				FA81AE4E1F0736FF00285DB3 /* YJSliderViewController.swift in Sources */,
+				FA81AE4F1F0736FF00285DB3 /* DYDefine.swift in Sources */,
+				FA81AE501F0736FF00285DB3 /* QRCodeScanViewController.swift in Sources */,
+				FA81AE511F0736FF00285DB3 /* CycleBannerViewController.swift in Sources */,
+				FA81AE521F0736FF00285DB3 /* DBSlider.m in Sources */,
+				FA81AE531F0736FF00285DB3 /* QRCodeShowInfoView.swift in Sources */,
+				FA81AE541F0736FF00285DB3 /* TableViewModel.swift in Sources */,
+				FA81AE551F0736FF00285DB3 /* TestPopoverViewController.swift in Sources */,
+				FA81AE561F0736FF00285DB3 /* CornerRadiusViewController.swift in Sources */,
+				FA81AE571F0736FF00285DB3 /* YJAlamafireHelper.swift in Sources */,
+				FA81AE581F0736FF00285DB3 /* QRCodeGenerateViewController.swift in Sources */,
+				FA81AE591F0736FF00285DB3 /* UIImageExtension.swift in Sources */,
+				FA81AE5A1F0736FF00285DB3 /* UIColorExtension.swift in Sources */,
+				FA81AE5B1F0736FF00285DB3 /* QRCodeViewController.swift in Sources */,
+				FA81AE5C1F0736FF00285DB3 /* DownloadCell.swift in Sources */,
+				FA81AE5D1F0736FF00285DB3 /* HZWaitingView.m in Sources */,
+				FA81AE5E1F0736FF00285DB3 /* BSCycleTextView.m in Sources */,
+				FA81AE5F1F0736FF00285DB3 /* CommonTestViewController.swift in Sources */,
+				FA81AE601F0736FF00285DB3 /* UDPClientViewController.swift in Sources */,
+				FA81AE611F0736FF00285DB3 /* GifView.m in Sources */,
+				FA81AE621F0736FF00285DB3 /* DYMainViewController.swift in Sources */,
+				FA81AE631F0736FF00285DB3 /* CGContextVC.swift in Sources */,
+				FA81AE641F0736FF00285DB3 /* TestDownloadingCircleVC.swift in Sources */,
+				FA81AE651F0736FF00285DB3 /* BatchUploadPicViewController.swift in Sources */,
+				FA81AE661F0736FF00285DB3 /* LoginInfoModel.swift in Sources */,
+				FA81AE671F0736FF00285DB3 /* TestSplitViewController.swift in Sources */,
+				FA81AE681F0736FF00285DB3 /* LoginViewModel.swift in Sources */,
+				FA81AE691F0736FF00285DB3 /* HZPhotoGroup.m in Sources */,
+				FA81AE6A1F0736FF00285DB3 /* DownloadModel.swift in Sources */,
+				FA81AE6B1F0736FF00285DB3 /* HZPhotoBrowserView.m in Sources */,
+				FA81AE6C1F0736FF00285DB3 /* PublicMethod.swift in Sources */,
+				FA81AE6D1F0736FF00285DB3 /* YJDownloading.swift in Sources */,
+				FA81AE6E1F0736FF00285DB3 /* CGContextView.swift in Sources */,
+				FA81AE6F1F0736FF00285DB3 /* PlayGifVC.swift in Sources */,
+				FA81AE701F0736FF00285DB3 /* PictureBrowsingViewController.swift in Sources */,
+				FA81AE711F0736FF00285DB3 /* DYHomeViewController.swift in Sources */,
+				FA81AE721F0736FF00285DB3 /* AppDelegate.swift in Sources */,
+				FA81AE731F0736FF00285DB3 /* SnapDetailViewController.swift in Sources */,
+				FA81AE741F0736FF00285DB3 /* RxSwiftTableviewVC.swift in Sources */,
+				FA81AE751F0736FF00285DB3 /* YJSlider.swift in Sources */,
+				FA81AE761F0736FF00285DB3 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,6 +1468,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = G7KRDXK4J7;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = TestSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -899,6 +1491,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = G7KRDXK4J7;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = TestSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -936,6 +1532,100 @@
 			};
 			name = Release;
 		};
+		FA7DD6031F074D85002F4237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9596105D0566442E5C180B7E /* Pods-TestSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = G7KRDXK4J7;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/TestSwift_test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"APPTEST\"";
+				PRODUCT_BUNDLE_IDENTIFIER = www.zyyj.com.cn.TestSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSwift/TestSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA7DD6041F074D85002F4237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E693CECE1112068234B7447 /* Pods-TestSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = G7KRDXK4J7;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/TestSwift_test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"APPTEST\"";
+				PRODUCT_BUNDLE_IDENTIFIER = www.zyyj.com.cn.TestSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSwift/TestSwift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA81AE901F0736FF00285DB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9596105D0566442E5C180B7E /* Pods-TestSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = G7KRDXK4J7;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/TestSwift_dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"APPDEV\"";
+				PRODUCT_BUNDLE_IDENTIFIER = www.zyyj.com.cn.TestSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSwift/TestSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA81AE911F0736FF00285DB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E693CECE1112068234B7447 /* Pods-TestSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = G7KRDXK4J7;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/TestSwift_dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"APPDEV\"";
+				PRODUCT_BUNDLE_IDENTIFIER = www.zyyj.com.cn.TestSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSwift/TestSwift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -962,6 +1652,24 @@
 			buildConfigurations = (
 				FA3F27291E4C32B700CAA270 /* Debug */,
 				FA3F272A1E4C32B700CAA270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7DD6021F074D85002F4237 /* Build configuration list for PBXNativeTarget "TestSwift_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7DD6031F074D85002F4237 /* Debug */,
+				FA7DD6041F074D85002F4237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA81AE8F1F0736FF00285DB3 /* Build configuration list for PBXNativeTarget "TestSwift_dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA81AE901F0736FF00285DB3 /* Debug */,
+				FA81AE911F0736FF00285DB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

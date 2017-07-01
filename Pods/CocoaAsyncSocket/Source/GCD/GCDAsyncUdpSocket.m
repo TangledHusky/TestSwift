@@ -373,10 +373,8 @@ enum GCDAsyncUdpSocketConfig
 			#endif
 		}
 		
-//		max4ReceiveSize = 9216;
-//		max6ReceiveSize = 9216;
-        max4ReceiveSize = 65507;
-        max6ReceiveSize = 65507;
+		max4ReceiveSize = 9216;
+		max6ReceiveSize = 9216;
 		
 		socket4FD = SOCKET_NULL;
 		socket6FD = SOCKET_NULL;
@@ -809,7 +807,6 @@ enum GCDAsyncUdpSocketConfig
 	dispatch_block_t block = ^{
 		
 		result = max4ReceiveSize;
-        NSLog(@"811result:%ld",result);
 	};
 	
 	if (dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey))
@@ -826,8 +823,7 @@ enum GCDAsyncUdpSocketConfig
 		
 		LogVerbose(@"%@ %u", THIS_METHOD, (unsigned)max);
 		
-        max4ReceiveSize = 65507;//max;
-        NSLog(@"830result:%ld",max);
+		max4ReceiveSize = max;
 	};
 	
 	if (dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey))
@@ -859,7 +855,7 @@ enum GCDAsyncUdpSocketConfig
 		
 		LogVerbose(@"%@ %u", THIS_METHOD, (unsigned)max);
 		
-        max6ReceiveSize = 65507;//max;
+		max6ReceiveSize = max;
 	};
 	
 	if (dispatch_get_specific(IsOnSocketQueueOrTargetQueueKey))
@@ -1942,9 +1938,6 @@ enum GCDAsyncUdpSocketConfig
 	// CreateSocket Block
 	// This block will be invoked below.
 	
-   
-    
-    
 	int(^createSocket)(int) = ^int (int domain) {
 		
 		int socketFD = socket(domain, SOCK_DGRAM, 0);
@@ -1993,41 +1986,6 @@ enum GCDAsyncUdpSocketConfig
 			return SOCKET_NULL;
 		}
 		
-        
-        /**
-         * The theoretical maximum size of any IPv4 UDP packet is UINT16_MAX = 65535.
-         * The theoretical maximum size of any IPv6 UDP packet is UINT32_MAX = 4294967295.
-         *
-         * The default maximum size of the UDP buffer in iOS is 9216 bytes.
-         *
-         * This is the reason of #222(GCD does not necessarily return the size of an entire UDP packet) and
-         *  #535(GCDAsyncUDPSocket can not send data when data is greater than 9K)
-         *
-         *
-         * Enlarge the maximum size of UDP packet.
-         * I can not ensure the protocol type now so that the max size is set to 65535 :)
-         **/
-        int maximumBufferSize = 65535;
-        
-        status = setsockopt(socketFD, SOL_SOCKET, SO_SNDBUF, (const char*)&maximumBufferSize, sizeof(int));
-        if (status == -1)
-        {
-            if (errPtr)
-                *errPtr = [self errnoErrorWithReason:@"Error setting send buffer size (setsockopt)"];
-            close(socketFD);
-            return SOCKET_NULL;
-        }
-        
-        status = setsockopt(socketFD, SOL_SOCKET, SO_RCVBUF, (const char*)&maximumBufferSize, sizeof(int));
-        if (status == -1)
-        {
-            if (errPtr)
-                *errPtr = [self errnoErrorWithReason:@"Error setting receive buffer size (setsockopt)"];
-            close(socketFD);
-            return SOCKET_NULL;
-        }
-
-        
 		return socketFD;
 	};
 	
@@ -4404,7 +4362,7 @@ enum GCDAsyncUdpSocketConfig
 		
 		// #222: GCD does not necessarily return the size of an entire UDP packet 
 		// from dispatch_source_get_data(), so we must use the maximum packet size.
-		size_t bufSize = 65507;//max4ReceiveSize;
+		size_t bufSize = max4ReceiveSize;
 		void *buf = malloc(bufSize);
 		
 		result = recvfrom(socket4FD, buf, bufSize, 0, (struct sockaddr *)&sockaddr4, &sockaddr4len);
@@ -4441,7 +4399,7 @@ enum GCDAsyncUdpSocketConfig
 		
 		// #222: GCD does not necessarily return the size of an entire UDP packet 
 		// from dispatch_source_get_data(), so we must use the maximum packet size.
-        size_t bufSize = 65507;//max6ReceiveSize;
+		size_t bufSize = max6ReceiveSize;
 		void *buf = malloc(bufSize);
 		
 		result = recvfrom(socket6FD, buf, bufSize, 0, (struct sockaddr *)&sockaddr6, &sockaddr6len);

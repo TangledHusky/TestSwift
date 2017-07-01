@@ -129,34 +129,35 @@
     
     //HZWebImage加载图片
     __weak __typeof(self)weakSelf = self;
-    [_imageview sd_setImageWithURL:url placeholderImage:placeholder options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-        __strong __typeof(weakSelf)strongSelf = weakSelf;
-        strongSelf.waitingView.progress = (CGFloat)receivedSize / expectedSize;
-        
-    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        __strong __typeof(weakSelf)strongSelf = weakSelf;
-        [_waitingView removeFromSuperview];
-        
-        if (error) {
-            //图片加载失败的处理，此处可以自定义各种操作（...）
-            
-            UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-            strongSelf.reloadButton = button;
-            button.layer.cornerRadius = 2;
-            button.clipsToBounds = YES;
-            button.bounds = CGRectMake(0, 0, 200, 40);
-            button.center = CGPointMake(kAPPWidth * 0.5, KAppHeight * 0.5);
-            button.titleLabel.font = [UIFont systemFontOfSize:14];
-            button.backgroundColor = [UIColor colorWithRed:0.1f green:0.1f blue:0.1f alpha:0.3f];
-            [button setTitle:@"原图加载失败，点击重新加载" forState:UIControlStateNormal];
-            [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            [button addTarget:strongSelf action:@selector(reloadImage) forControlEvents:UIControlEventTouchUpInside];
-            
-            [self addSubview:button];
-            return;
-        }
-        strongSelf.hasLoadedImage = YES;//图片加载成功
-    }];
+
+//    [_imageview sd_setImageWithURL:url placeholderImage:placeholder options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+//        __strong __typeof(weakSelf)strongSelf = weakSelf;
+//        strongSelf.waitingView.progress = (CGFloat)receivedSize / expectedSize;
+//        
+//    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+//        __strong __typeof(weakSelf)strongSelf = weakSelf;
+//        [_waitingView removeFromSuperview];
+//        
+//        if (error) {
+//            //图片加载失败的处理，此处可以自定义各种操作（...）
+//            
+//            UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//            strongSelf.reloadButton = button;
+//            button.layer.cornerRadius = 2;
+//            button.clipsToBounds = YES;
+//            button.bounds = CGRectMake(0, 0, 200, 40);
+//            button.center = CGPointMake(kAPPWidth * 0.5, KAppHeight * 0.5);
+//            button.titleLabel.font = [UIFont systemFontOfSize:14];
+//            button.backgroundColor = [UIColor colorWithRed:0.1f green:0.1f blue:0.1f alpha:0.3f];
+//            [button setTitle:@"原图加载失败，点击重新加载" forState:UIControlStateNormal];
+//            [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//            [button addTarget:strongSelf action:@selector(reloadImage) forControlEvents:UIControlEventTouchUpInside];
+//            
+//            [self addSubview:button];
+//            return;
+//        }
+//        strongSelf.hasLoadedImage = YES;//图片加载成功
+//    }];
 }
 
 - (void)reloadImage

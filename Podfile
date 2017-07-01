@@ -23,5 +23,7 @@ pod 'RxSwift'
 pod 'RxCocoa'
 pod 'RxDataSources'
 
+pod 'AFNetworking'
+
 end
 

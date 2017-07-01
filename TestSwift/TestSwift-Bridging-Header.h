@@ -23,3 +23,8 @@
 #import "HZPhotoItem.h"
 
 #import "GifView.h"
+
+
+#import "DBSlider.h"
+
+#import <AFNetworking/AFNetworking.h>

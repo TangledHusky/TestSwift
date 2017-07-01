@@ -24,6 +24,8 @@ class CommonTestViewController: UIViewController {
         //1.测试字符串截取
         testSubbstring()
         
+        testDownloadingCircle()
+        
         
     }
 
@@ -45,6 +47,7 @@ class CommonTestViewController: UIViewController {
     }
     
     
+    /// 截取字符串
     func testSubbstring() {
         var str = "12345678"
         let length = str.characters.count
@@ -59,6 +62,14 @@ class CommonTestViewController: UIViewController {
         
  
 
+        
+    }
+    
+    
+    /// 下载进度环形
+    func testDownloadingCircle() {
+        
+        
         
     }
 }
