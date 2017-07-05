@@ -35,6 +35,7 @@ class ViewController: UIViewController {
                                   "UISlider触摸区域放大",
                                   "多任务下载",
                                   "批量上传图片",
+                                  "测试HandyJSON",
         
     ]
     
@@ -189,6 +190,12 @@ extension ViewController:UITableViewDelegate{
             self.navigationController?.pushViewController(vc, animated: true)
             
             break
+        case 21:
+            let vc = TestHandyJSONViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            break
+            
 
             
         default:

@@ -25,5 +25,7 @@ pod 'RxDataSources'
 
 pod 'AFNetworking'
 
+pod 'HandyJSON'
+
 end
 

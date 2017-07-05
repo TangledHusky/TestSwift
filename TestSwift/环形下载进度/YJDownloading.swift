@@ -79,4 +79,24 @@ class YJDownloading: UIView {
     }
     
     
+    /// 添加动画Transaction，这种更好，不会产出卡住不动的现象
+    ///
+    /// - Parameter progressNumber: <#progressNumber description#>
+    func setProgressNumber(progressNumber:CGFloat) {
+        if layerShow != nil {
+            
+            CATransaction.begin()
+            CATransaction.setDisableActions(true)
+            CATransaction.setAnimationDuration(0.1)
+            CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut))
+            layerShow.strokeEnd = progressNumber
+            CATransaction.commit()
+            
+        }
+        
+        
+        
+    }
+    
+    
 }
