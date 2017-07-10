@@ -21,6 +21,7 @@ class TestHandyJson: HandyJSON {
 }
 
 class TestHandyJsonList: HandyJSON {
+    //数组list
     var list: [TestHandyJson]! = []
     
     //必须实现
