@@ -11,7 +11,18 @@
 		8F2E8261E422EEBF2BC125D6 /* Pods_TestSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */; };
 		FA07A26B1EA1EF8600B0A071 /* YJSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A26A1EA1EF8600B0A071 /* YJSliderViewController.swift */; };
 		FA07A26D1EA1EF9000B0A071 /* YJSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A26C1EA1EF9000B0A071 /* YJSlider.swift */; };
-		FA22F8131EA456B50027DD58 /* DBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FA22F8121EA456B50027DD58 /* DBSlider.m */; };
+		FA31809C1FA1848C0026CD6F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA31809B1FA1848C0026CD6F /* AudioToolbox.framework */; };
+		FA31809E1FA184970026CD6F /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA31809D1FA184970026CD6F /* CoreAudio.framework */; };
+		FA3180A01FA1849E0026CD6F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA31809F1FA1849E0026CD6F /* CoreVideo.framework */; };
+		FA3180A21FA184A40026CD6F /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3180A11FA184A40026CD6F /* VideoToolbox.framework */; };
+		FA3180A41FA184AC0026CD6F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3180A31FA184AC0026CD6F /* AVFoundation.framework */; };
+		FA3180A61FA184B70026CD6F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3180A51FA184B70026CD6F /* CoreMedia.framework */; };
+		FA3180A81FA184BF0026CD6F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3180A71FA184BF0026CD6F /* MediaPlayer.framework */; };
+		FA3180AA1FA184C50026CD6F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3180A91FA184C50026CD6F /* libz.tbd */; };
+		FA3180AC1FA184D90026CD6F /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3180AB1FA184D90026CD6F /* libstdc++.tbd */; };
+		FA3180BA1FA188680026CD6F /* DBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3180B91FA188680026CD6F /* DBSlider.m */; };
+		FA3180BB1FA188680026CD6F /* DBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3180B91FA188680026CD6F /* DBSlider.m */; };
+		FA3180BC1FA188680026CD6F /* DBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3180B91FA188680026CD6F /* DBSlider.m */; };
 		FA32A4011E80F64100171770 /* UDPClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A4001E80F64100171770 /* UDPClientViewController.swift */; };
 		FA32A4031E8102DD00171770 /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA32A4021E8102DD00171770 /* test.jpeg */; };
 		FA32A4091E82149800171770 /* 8k.png in Resources */ = {isa = PBXBuildFile; fileRef = FA32A4081E82149800171770 /* 8k.png */; };
@@ -97,7 +108,6 @@
 		FA7DD5C21F074D85002F4237 /* DYDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F275A1E4C59A100CAA270 /* DYDefine.swift */; };
 		FA7DD5C31F074D85002F4237 /* QRCodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4E1E7634F000C8C4AE /* QRCodeScanViewController.swift */; };
 		FA7DD5C41F074D85002F4237 /* CycleBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27521E4C594900CAA270 /* CycleBannerViewController.swift */; };
-		FA7DD5C51F074D85002F4237 /* DBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FA22F8121EA456B50027DD58 /* DBSlider.m */; };
 		FA7DD5C61F074D85002F4237 /* QRCodeShowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55EEC11E76863700684131 /* QRCodeShowInfoView.swift */; };
 		FA7DD5C71F074D85002F4237 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A54B1E8369E200171770 /* TableViewModel.swift */; };
 		FA7DD5C81F074D85002F4237 /* TestPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F11E8B4D980027B7AD /* TestPopoverViewController.swift */; };
@@ -173,7 +183,6 @@
 		FA81AE4F1F0736FF00285DB3 /* DYDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F275A1E4C59A100CAA270 /* DYDefine.swift */; };
 		FA81AE501F0736FF00285DB3 /* QRCodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4E1E7634F000C8C4AE /* QRCodeScanViewController.swift */; };
 		FA81AE511F0736FF00285DB3 /* CycleBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27521E4C594900CAA270 /* CycleBannerViewController.swift */; };
-		FA81AE521F0736FF00285DB3 /* DBSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FA22F8121EA456B50027DD58 /* DBSlider.m */; };
 		FA81AE531F0736FF00285DB3 /* QRCodeShowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55EEC11E76863700684131 /* QRCodeShowInfoView.swift */; };
 		FA81AE541F0736FF00285DB3 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A54B1E8369E200171770 /* TableViewModel.swift */; };
 		FA81AE551F0736FF00285DB3 /* TestPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F11E8B4D980027B7AD /* TestPopoverViewController.swift */; };
@@ -252,14 +261,37 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FA3180B01FA185190026CD6F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0AF8EC3595F779412EB3F401 /* Pods-TestSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestSwift/Pods-TestSwift.release.xcconfig"; sourceTree = "<group>"; };
 		49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96A0CE05D5D19AB7F7E8B45 /* Pods-TestSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestSwift/Pods-TestSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		FA07A26A1EA1EF8600B0A071 /* YJSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJSliderViewController.swift; sourceTree = "<group>"; };
 		FA07A26C1EA1EF9000B0A071 /* YJSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJSlider.swift; sourceTree = "<group>"; };
-		FA22F8111EA456B50027DD58 /* DBSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSlider.h; sourceTree = "<group>"; };
-		FA22F8121EA456B50027DD58 /* DBSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSlider.m; sourceTree = "<group>"; };
+		FA31809B1FA1848C0026CD6F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FA31809D1FA184970026CD6F /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		FA31809F1FA1849E0026CD6F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		FA3180A11FA184A40026CD6F /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		FA3180A31FA184AC0026CD6F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FA3180A51FA184B70026CD6F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FA3180A71FA184BF0026CD6F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		FA3180A91FA184C50026CD6F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FA3180AB1FA184D90026CD6F /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		FA3180B21FA187980026CD6F /* VLC ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "VLC ReadMe.txt"; sourceTree = "<group>"; };
+		FA3180B81FA188680026CD6F /* DBSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBSlider.h; sourceTree = "<group>"; };
+		FA3180B91FA188680026CD6F /* DBSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBSlider.m; sourceTree = "<group>"; };
 		FA32A4001E80F64100171770 /* UDPClientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPClientViewController.swift; sourceTree = "<group>"; };
 		FA32A4021E8102DD00171770 /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpeg; sourceTree = "<group>"; };
 		FA32A4081E82149800171770 /* 8k.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8k.png; sourceTree = "<group>"; };
@@ -359,6 +391,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3180AC1FA184D90026CD6F /* libstdc++.tbd in Frameworks */,
+				FA3180AA1FA184C50026CD6F /* libz.tbd in Frameworks */,
+				FA3180A81FA184BF0026CD6F /* MediaPlayer.framework in Frameworks */,
+				FA3180A61FA184B70026CD6F /* CoreMedia.framework in Frameworks */,
+				FA3180A41FA184AC0026CD6F /* AVFoundation.framework in Frameworks */,
+				FA3180A21FA184A40026CD6F /* VideoToolbox.framework in Frameworks */,
+				FA3180A01FA1849E0026CD6F /* CoreVideo.framework in Frameworks */,
+				FA31809E1FA184970026CD6F /* CoreAudio.framework in Frameworks */,
+				FA31809C1FA1848C0026CD6F /* AudioToolbox.framework in Frameworks */,
 				FA860A161E51A8DB0084A025 /* Alamofire.framework in Frameworks */,
 				8F2E8261E422EEBF2BC125D6 /* Pods_TestSwift.framework in Frameworks */,
 				0F2CCCC92A36EDB746C8524E /* Pods_TestSwift.framework in Frameworks */,
@@ -394,6 +435,15 @@
 		A288A701D673BEBC08D0A1C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA3180AB1FA184D90026CD6F /* libstdc++.tbd */,
+				FA3180A91FA184C50026CD6F /* libz.tbd */,
+				FA3180A71FA184BF0026CD6F /* MediaPlayer.framework */,
+				FA3180A51FA184B70026CD6F /* CoreMedia.framework */,
+				FA3180A31FA184AC0026CD6F /* AVFoundation.framework */,
+				FA3180A11FA184A40026CD6F /* VideoToolbox.framework */,
+				FA31809F1FA1849E0026CD6F /* CoreVideo.framework */,
+				FA31809D1FA184970026CD6F /* CoreAudio.framework */,
+				FA31809B1FA1848C0026CD6F /* AudioToolbox.framework */,
 				FA860A151E51A8DB0084A025 /* Alamofire.framework */,
 				49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */,
 			);
@@ -412,8 +462,8 @@
 		FA07A2691EA1EF4800B0A071 /* UISlider触摸区域放大 */ = {
 			isa = PBXGroup;
 			children = (
-				FA22F8111EA456B50027DD58 /* DBSlider.h */,
-				FA22F8121EA456B50027DD58 /* DBSlider.m */,
+				FA3180B81FA188680026CD6F /* DBSlider.h */,
+				FA3180B91FA188680026CD6F /* DBSlider.m */,
 				FA07A26C1EA1EF9000B0A071 /* YJSlider.swift */,
 				FA07A26A1EA1EF8600B0A071 /* YJSliderViewController.swift */,
 			);
@@ -543,6 +593,7 @@
 		FA3F270A1E4C32B700CAA270 /* TestSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FA3180B21FA187980026CD6F /* VLC ReadMe.txt */,
 				FA3C10C61F0CBC530008A0F7 /* 测试HandyJSON */,
 				FA3BF1461EB828E7000A37AD /* 批量上传图片 */,
 				FA5FBFD01EA87D45009C65BF /* 多任务下载 */,
@@ -817,6 +868,7 @@
 				FA3F27061E4C32B700CAA270 /* Resources */,
 				0973581CF85B31E8560AD546 /* [CP] Embed Pods Frameworks */,
 				3D9026CD4CA03F0D9BC4794B /* [CP] Copy Pods Resources */,
+				FA3180B01FA185190026CD6F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1078,6 +1130,7 @@
 				FA83C4F61E8B51A60027B7AD /* TestPadViewController.swift in Sources */,
 				FA5FBFD21EA87D75009C65BF /* BigFileDownloadViewController.swift in Sources */,
 				FA32A41C1E825AC000171770 /* RxSwiftLoginViewController.swift in Sources */,
+				FA3180BC1FA188680026CD6F /* DBSlider.m in Sources */,
 				FA3F276D1E4C641500CAA270 /* HZPhotoBrowser.m in Sources */,
 				FA3F27791E4C644B00CAA270 /* NSString+BSExt.m in Sources */,
 				FA3F27701E4C641500CAA270 /* HZPhotoItem.m in Sources */,
@@ -1088,7 +1141,6 @@
 				FA3F275C1E4C59A100CAA270 /* DYDefine.swift in Sources */,
 				FAE61D4F1E7634F000C8C4AE /* QRCodeScanViewController.swift in Sources */,
 				FA3F27531E4C594900CAA270 /* CycleBannerViewController.swift in Sources */,
-				FA22F8131EA456B50027DD58 /* DBSlider.m in Sources */,
 				FA55EEC21E76863700684131 /* QRCodeShowInfoView.swift in Sources */,
 				FA32A54C1E8369E200171770 /* TableViewModel.swift in Sources */,
 				FA3C10CC1F0CBCA90008A0F7 /* TestHandyJson.swift in Sources */,
@@ -1150,6 +1202,7 @@
 				FA7DD5B81F074D85002F4237 /* TestPadViewController.swift in Sources */,
 				FA7DD5B91F074D85002F4237 /* BigFileDownloadViewController.swift in Sources */,
 				FA7DD5BA1F074D85002F4237 /* RxSwiftLoginViewController.swift in Sources */,
+				FA3180BB1FA188680026CD6F /* DBSlider.m in Sources */,
 				FA7DD5BB1F074D85002F4237 /* HZPhotoBrowser.m in Sources */,
 				FA7DD5BC1F074D85002F4237 /* NSString+BSExt.m in Sources */,
 				FA7DD5BD1F074D85002F4237 /* HZPhotoItem.m in Sources */,
@@ -1160,7 +1213,6 @@
 				FA7DD5C21F074D85002F4237 /* DYDefine.swift in Sources */,
 				FA7DD5C31F074D85002F4237 /* QRCodeScanViewController.swift in Sources */,
 				FA7DD5C41F074D85002F4237 /* CycleBannerViewController.swift in Sources */,
-				FA7DD5C51F074D85002F4237 /* DBSlider.m in Sources */,
 				FA7DD5C61F074D85002F4237 /* QRCodeShowInfoView.swift in Sources */,
 				FA7DD5C71F074D85002F4237 /* TableViewModel.swift in Sources */,
 				FA3C10CE1F0CBCA90008A0F7 /* TestHandyJson.swift in Sources */,
@@ -1214,6 +1266,7 @@
 				FA81AE451F0736FF00285DB3 /* TestPadViewController.swift in Sources */,
 				FA81AE461F0736FF00285DB3 /* BigFileDownloadViewController.swift in Sources */,
 				FA81AE471F0736FF00285DB3 /* RxSwiftLoginViewController.swift in Sources */,
+				FA3180BA1FA188680026CD6F /* DBSlider.m in Sources */,
 				FA81AE481F0736FF00285DB3 /* HZPhotoBrowser.m in Sources */,
 				FA81AE491F0736FF00285DB3 /* NSString+BSExt.m in Sources */,
 				FA81AE4A1F0736FF00285DB3 /* HZPhotoItem.m in Sources */,
@@ -1224,7 +1277,6 @@
 				FA81AE4F1F0736FF00285DB3 /* DYDefine.swift in Sources */,
 				FA81AE501F0736FF00285DB3 /* QRCodeScanViewController.swift in Sources */,
 				FA81AE511F0736FF00285DB3 /* CycleBannerViewController.swift in Sources */,
-				FA81AE521F0736FF00285DB3 /* DBSlider.m in Sources */,
 				FA81AE531F0736FF00285DB3 /* QRCodeShowInfoView.swift in Sources */,
 				FA81AE541F0736FF00285DB3 /* TableViewModel.swift in Sources */,
 				FA3C10CD1F0CBCA90008A0F7 /* TestHandyJson.swift in Sources */,

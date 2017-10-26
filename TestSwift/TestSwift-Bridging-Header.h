@@ -4,7 +4,7 @@
 
 
 #import <ViewDeck/ViewDeck.h>
-
+//#import <DynamicMobileVLCKit/VLCMediaPlayer.h>
 
 
 //#import "UIImageView+WebCache.h"

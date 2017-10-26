@@ -36,6 +36,7 @@ class ViewController: UIViewController {
                                   "多任务下载",
                                   "批量上传图片",
                                   "测试HandyJSON",
+                                  "VLC播放器",
         
     ]
     
@@ -195,7 +196,11 @@ extension ViewController:UITableViewDelegate{
             self.navigationController?.pushViewController(vc, animated: true)
             
             break
+        case 22:
+//            let vc = TestVLCViewController()
+//            self.navigationController?.pushViewController(vc, animated: true)
             
+            break
 
             
         default:
