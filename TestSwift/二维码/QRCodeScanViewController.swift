@@ -92,7 +92,7 @@ class QRCodeScanViewController: UIViewController {
     func setupCamera() {
         DispatchQueue.global().async {
             if (self.device == nil){
-                self.device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+                self.device = AVCaptureDevice.default(for: AVMediaType.video)//AVCaptureDevice.defaultDevice(withMediaType: AVMediaType.video)
                 do{
                     self.input = try AVCaptureDeviceInput.init(device: self.device)
                 }catch{
@@ -103,7 +103,7 @@ class QRCodeScanViewController: UIViewController {
                 self.output.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
                 
                 self.session = AVCaptureSession.init()
-                self.session.canSetSessionPreset(AVCaptureSessionPresetHigh)
+                self.session.canSetSessionPreset(AVCaptureSession.Preset.high)
                 if self.session.canAddInput(self.input){
                     self.session .addInput(self.input)
                     self.canOpen = true
@@ -119,10 +119,10 @@ class QRCodeScanViewController: UIViewController {
                         self.session.addOutput(self.output)
                     }
                     // 只支持二维码
-                    self.output.metadataObjectTypes = [AVMetadataObjectTypeQRCode]
+                    self.output.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
                     
                     self.preview = AVCaptureVideoPreviewLayer(session: self.session)
-                    self.preview.videoGravity = AVLayerVideoGravityResizeAspectFill
+                    self.preview.videoGravity = AVLayerVideoGravity.resizeAspectFill
                     DispatchQueue.main.async {
                         self.preview.frame = CGRect(x: 0, y: 0, width: KScreenWidth, height: KScreenHeight)
                         self.view.layer.insertSublayer(self.preview, at: 0)
@@ -135,7 +135,7 @@ class QRCodeScanViewController: UIViewController {
                 DispatchQueue.main.async {
                     //开启定时器，构造移动动画效果
                     self.timer = Timer(timeInterval: 0.02, target: self, selector: #selector(self.lineAnimation), userInfo: nil, repeats: true)
-                    RunLoop.current.add(self.timer!, forMode: .defaultRunLoopMode)
+                    RunLoop.current.add(self.timer!, forMode: RunLoop.Mode.default)
                     //开始采集数据
                     self.session.startRunning()
                 }
@@ -146,7 +146,7 @@ class QRCodeScanViewController: UIViewController {
     
     
     /// 扫描框红线移动动画
-    func lineAnimation() {
+    @objc func lineAnimation() {
         let scanX:CGFloat = (KScreenWidth-qrcodeWH)/2
         if upOrdown == false{
             num += 1
@@ -217,7 +217,7 @@ extension QRCodeScanViewController:AVCaptureMetadataOutputObjectsDelegate{
         var strValue:String = ""
         if metadataObjects.count>0{
             let obj:AVMetadataMachineReadableCodeObject = metadataObjects.first as! AVMetadataMachineReadableCodeObject
-            strValue = obj.stringValue
+            strValue = obj.stringValue ?? ""
         }
         
         self.session.stopRunning()
@@ -240,7 +240,7 @@ extension QRCodeScanViewController:UIAlertViewDelegate{
             
         }else if buttonIndex == 1{
             //打开设置
-            let url:NSURL = NSURL(string: UIApplicationOpenSettingsURLString)!
+            let url:NSURL = NSURL(string: UIApplication.openSettingsURLString)!
             if UIApplication.shared.canOpenURL(url as URL){
                 UIApplication.shared.openURL(url as URL)
             }

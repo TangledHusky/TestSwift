@@ -45,7 +45,7 @@ class YJDownloading: UIView {
         layerBg.fillColor = UIColor.clear.cgColor
         layerBg.path = bezierBg.cgPath
         layerBg.lineWidth = circleBgWidth
-        layerBg.lineCap = kCALineCapRound
+        layerBg.lineCap = CAShapeLayerLineCap.round
         self.layer.addSublayer(layerBg)
         
         
@@ -55,7 +55,7 @@ class YJDownloading: UIView {
         layerShow.fillColor = UIColor.clear.cgColor
         layerShow.path = bezierShow.cgPath
         layerShow.lineWidth = circleColorWidth
-        layerShow.lineCap = kCALineCapRound
+        layerShow.lineCap = CAShapeLayerLineCap.round
         self.layer.addSublayer(layerShow)
 
         //zhong
@@ -88,7 +88,7 @@ class YJDownloading: UIView {
             CATransaction.begin()
             CATransaction.setDisableActions(true)
             CATransaction.setAnimationDuration(0.1)
-            CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut))
+            CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut))
             layerShow.strokeEnd = progressNumber
             CATransaction.commit()
             

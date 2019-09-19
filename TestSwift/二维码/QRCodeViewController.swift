@@ -30,7 +30,7 @@ class QRCodeViewController: UIViewController {
         
     }
     
-    func generate() {
+    @objc func generate() {
         
         let vc = QRCodeGenerateViewController()
         self.navigationController?.pushViewController(vc, animated: true)
@@ -38,7 +38,7 @@ class QRCodeViewController: UIViewController {
         
     }
     
-    func scan() {
+    @objc func scan() {
         let vc = QRCodeScanViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }

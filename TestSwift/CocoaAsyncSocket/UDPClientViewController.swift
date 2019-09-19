@@ -127,8 +127,8 @@ class UDPClientViewController: UIViewController {
     func getMaxLength(str:String) -> String {
         var result:String = str
         
-        if str.characters.count<10 {
-            let len = 10 - str.characters.count
+        if str.count<10 {
+            let len = 10 - str.count
             for _ in 0..<len {
                 result.append("a")
             }

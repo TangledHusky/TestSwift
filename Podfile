@@ -18,7 +18,7 @@ pod 'SnapKit'
 
 pod 'Alamofire'
 
-pod 'ObjectMapper', '~> 2.2'
+pod 'ObjectMapper'
 pod 'RxSwift'
 pod 'RxCocoa'
 pod 'RxDataSources'

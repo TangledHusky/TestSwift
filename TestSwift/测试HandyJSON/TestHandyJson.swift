@@ -54,3 +54,27 @@ struct structModel:HandyJSON {
 
 
 
+//==========other test=========
+
+struct ResponseData<T: HandyJSON>: HandyJSON {
+    var errorCode: Int?
+    var errorMsg: String?
+    var result: [T]?
+    var startIndex:Int!
+    var totalSize:Int!
+}
+
+struct FeedBackModel: HandyJSON {
+    var billDate: String?
+    var cashBillInfoId: Int?
+    var employeeId: Int?
+    var memberCardInfoID: Int?
+    var memberCode: String?
+    var memberName: String?
+    var memberServerChatInfoId: Int?
+    var mobile: String?
+    var projectName: String?
+    var projectPicOne: String?
+    var projectPicTwo: String?
+    var projectPicThree: String?
+}

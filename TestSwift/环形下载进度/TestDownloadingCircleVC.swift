@@ -35,11 +35,11 @@ class TestDownloadingCircleVC: UIViewController {
         
         
         let tt = Timer(timeInterval: 1, target: self, selector: #selector(self.updateCircle), userInfo: nil, repeats: true)
-        RunLoop.current.add(tt, forMode: .commonModes)
+        RunLoop.current.add(tt, forMode: RunLoop.Mode.common)
 
     }
     
-    func updateCircle()  {
+    @objc func updateCircle()  {
         progress = progress + 0.1
         loading.setProgress(progressNumber: CGFloat(progress))
     }

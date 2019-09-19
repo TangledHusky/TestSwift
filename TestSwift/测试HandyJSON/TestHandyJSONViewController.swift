@@ -26,23 +26,25 @@ class TestHandyJSONViewController: UIViewController {
             maker.center.equalToSuperview()
         }
         
-        //json 转 model
-        convertModel1()
-        convertModel2()
+        //可以放开注释！！！！！！
         
+        //json 转 model
+//        convertModel1()
+//        convertModel2()
+        convertModel11()
         
         //dict 转 model
-        convertModel3()
+//        convertModel3()
       
         //model 转 json
-        convertModel4()
+//        convertModel4()
         
     }
 
     func convertModel1() {
         let jsonStr = "{\"id\":1,\"name\":\"hello\",\"score\":1.1}"
         if let model = JSONDeserializer<TestHandyJson>.deserializeFrom(json: jsonStr){
-            print("\(model.id)  \(model.name)  \(String(describing: model.score))")
+            print("convertModel1    \(model)")
             
         }
     }
@@ -50,7 +52,7 @@ class TestHandyJSONViewController: UIViewController {
     func convertModel2() {
         let jsonStr = "{\"list\":[{\"id\":1,\"name\":\"hello\",\"score\":1.1},{\"id\":2,\"name\":\"kkkkk\",\"score\":2.2}]}"
         if let model = JSONDeserializer<TestHandyJsonList>.deserializeFrom(json: jsonStr){
-            print("\(model.list.count)  \(model.list[0].id)  \(model.list[0].name)  \(String(describing: model.list[0].score)) ")
+            print("convertModel2   \(model)")
         }
     }
     
@@ -60,7 +62,7 @@ class TestHandyJSONViewController: UIViewController {
                                        "sex":"man",
                                        "love":"篮球、菊花茶"]
         if let model = JSONDeserializer<DictToModel>.deserializeFrom(dict: jsonDict as NSDictionary){
-           print("\(model.id)  \(model.name) \(model.sex)  \(model.love))")
+           print("convertModel3  \(model)")
         }
     }
     
@@ -75,5 +77,15 @@ class TestHandyJSONViewController: UIViewController {
         print(model.toJSONString()!) // 序列化到JSON字符串
         print(model.toJSONString(prettyPrint: true)!) // 序列化为格式化后的JSON字符串,就是会换行，看起来好看
     
+    }
+    
+    func convertModel11() {
+        let jsonStr = "{\"errorCode\":0,\"errorMsg\":\"no err\",\"pageSize\":0,\"result\":[{\"billDate\":\"2019-09-16\",\"cashBillInfoId\":324429,\"employeeId\":36362,\"memberCardInfoID\":196024,\"memberCode\":\"13817641531\",\"memberName\":\"杨洋\",\"memberServerChatInfoId\":0,\"mobile\":\"1381764153\",\"projectName\":\"足浴168\",\"projectPicOne\":\"\",\"projectPicThree\":\"\",\"projectPicTwo\":\"\"}],\"startIndex\":0,\"totalSize\":0}"
+        if let model = JSONDeserializer<ResponseData<FeedBackModel>>.deserializeFrom(json: jsonStr){
+            print("convertModel  \(model.result)")
+            
+        }
+        
+        
     }
 }

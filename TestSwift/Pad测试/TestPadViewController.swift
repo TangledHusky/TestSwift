@@ -41,7 +41,7 @@ class TestPadViewController: UIViewController {
         
     }
     
-    func testNavPop() {
+    @objc func testNavPop() {
         popOver.present(from: self.navigationItem.leftBarButtonItem!, permittedArrowDirections: .any, animated: true)
 
     }
@@ -59,7 +59,7 @@ class TestPadViewController: UIViewController {
     }
     
     /// 在按钮弹出
-    func btnClick(sender:UIButton) {
+    @objc func btnClick(sender:UIButton) {
         //这种是紧靠着按钮位置弹出
         //popOver.present(from: sender.bounds, in: sender, permittedArrowDirections: .any, animated: true)
         

@@ -23,7 +23,7 @@ class QRCodeGenerateViewController: UIViewController {
         
     }
     
-    func generate() {
+    @objc func generate() {
         let img = self.creatQRCodeImage(text: "123", WH: 100)
         let imgView = UIImageView(frame: CGRect(x: 100, y: 150, width: 100, height: 100))
         imgView.image = img

@@ -38,7 +38,7 @@
 
 #define kCycleScrollViewInitialPageControlDotSize CGSizeMake(10, 10)
 
-NSString * const ID = @"cycleCell";
+NSString * const ID = @"SDCycleScrollViewCell";
 
 @interface SDCycleScrollView () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -142,6 +142,7 @@ NSString * const ID = @"cycleCell";
     mainView.showsHorizontalScrollIndicator = NO;
     mainView.showsVerticalScrollIndicator = NO;
     [mainView registerClass:[SDCollectionViewCell class] forCellWithReuseIdentifier:ID];
+    
     mainView.dataSource = self;
     mainView.delegate = self;
     mainView.scrollsToTop = NO;
@@ -151,6 +152,17 @@ NSString * const ID = @"cycleCell";
 
 
 #pragma mark - properties
+
+- (void)setDelegate:(id<SDCycleScrollViewDelegate>)delegate
+{
+    _delegate = delegate;
+    
+    if ([self.delegate respondsToSelector:@selector(customCollectionViewCellClassForCycleScrollView:)] && [self.delegate customCollectionViewCellClassForCycleScrollView:self]) {
+        [self.mainView registerClass:[self.delegate customCollectionViewCellClassForCycleScrollView:self] forCellWithReuseIdentifier:ID];
+    }else if ([self.delegate respondsToSelector:@selector(customCollectionViewCellNibForCycleScrollView:)] && [self.delegate customCollectionViewCellNibForCycleScrollView:self]) {
+        [self.mainView registerNib:[self.delegate customCollectionViewCellNibForCycleScrollView:self] forCellWithReuseIdentifier:ID];
+    }
+}
 
 - (void)setPlaceholderImage:(UIImage *)placeholderImage
 {
@@ -290,11 +302,12 @@ NSString * const ID = @"cycleCell";
     
     _totalItemsCount = self.infiniteLoop ? self.imagePathsGroup.count * 100 : self.imagePathsGroup.count;
     
-    if (imagePathsGroup.count != 1) {
+    if (imagePathsGroup.count > 1) { // 由于 !=1 包含count == 0等情况
         self.mainView.scrollEnabled = YES;
         [self setAutoScroll:self.autoScroll];
     } else {
         self.mainView.scrollEnabled = NO;
+        [self invalidateTimer];
     }
     
     [self setupPageControl];
@@ -340,10 +353,21 @@ NSString * const ID = @"cycleCell";
     }
 }
 
+- (void)disableScrollGesture {
+    self.mainView.canCancelContentTouches = NO;
+    for (UIGestureRecognizer *gesture in self.mainView.gestureRecognizers) {
+        if ([gesture isKindOfClass:[UIPanGestureRecognizer class]]) {
+            [self.mainView removeGestureRecognizer:gesture];
+        }
+    }
+}
+
 #pragma mark - actions
 
 - (void)setupTimer
 {
+    [self invalidateTimer]; // 创建定时器前先停止定时器，不然会出现僵尸定时器，导致轮播频率错误
+    
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:self.autoScrollTimeInterval target:self selector:@selector(automaticScroll) userInfo:nil repeats:YES];
     _timer = timer;
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
@@ -453,13 +477,15 @@ NSString * const ID = @"cycleCell";
 
 + (void)clearImagesCache
 {
-    [[[SDWebImageManager sharedManager] imageCache] clearDiskOnCompletion:nil];
+    [[[SDWebImageManager sharedManager] imageCache] clearWithCacheType:SDImageCacheTypeDisk completion:nil];
 }
 
 #pragma mark - life circles
 
 - (void)layoutSubviews
 {
+    self.delegate = self.delegate;
+    
     [super layoutSubviews];
     
     _flowLayout.itemSize = self.frame.size;
@@ -543,7 +569,18 @@ NSString * const ID = @"cycleCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     SDCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+    
     long itemIndex = [self pageControlIndexWithCurrentCellIndex:indexPath.item];
+    
+    if ([self.delegate respondsToSelector:@selector(setupCustomCell:forIndex:cycleScrollView:)] &&
+        [self.delegate respondsToSelector:@selector(customCollectionViewCellClassForCycleScrollView:)] && [self.delegate customCollectionViewCellClassForCycleScrollView:self]) {
+        [self.delegate setupCustomCell:cell forIndex:itemIndex cycleScrollView:self];
+        return cell;
+    }else if ([self.delegate respondsToSelector:@selector(setupCustomCell:forIndex:cycleScrollView:)] &&
+              [self.delegate respondsToSelector:@selector(customCollectionViewCellNibForCycleScrollView:)] && [self.delegate customCollectionViewCellNibForCycleScrollView:self]) {
+        [self.delegate setupCustomCell:cell forIndex:itemIndex cycleScrollView:self];
+        return cell;
+    }
     
     NSString *imagePath = self.imagePathsGroup[itemIndex];
     
@@ -553,7 +590,7 @@ NSString * const ID = @"cycleCell";
         } else {
             UIImage *image = [UIImage imageNamed:imagePath];
             if (!image) {
-                [UIImage imageWithContentsOfFile:imagePath];
+                image = [UIImage imageWithContentsOfFile:imagePath];
             }
             cell.imageView.image = image;
         }
@@ -640,5 +677,17 @@ NSString * const ID = @"cycleCell";
     }
 }
 
+- (void)makeScrollViewScrollToIndex:(NSInteger)index{
+    if (self.autoScroll) {
+        [self invalidateTimer];
+    }
+    if (0 == _totalItemsCount) return;
+    
+    [self scrollToIndex:(int)(_totalItemsCount * 0.5 + index)];
+    
+    if (self.autoScroll) {
+        [self setupTimer];
+    }
+}
 
 @end

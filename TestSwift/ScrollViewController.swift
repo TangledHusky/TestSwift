@@ -83,7 +83,7 @@ class ScrollViewController: UIViewController {
     }
 
     func getRandomColor() -> UIColor {
-        return UIColor(colorLiteralRed: Float(Double(arc4random_uniform(255))/255.0), green: Float(Double(arc4random_uniform(255))/255.0), blue: Float(Double(arc4random_uniform(255))/255.0), alpha: 1.0)
+        return UIColor(_colorLiteralRed: Float(Double(arc4random_uniform(255))/255.0), green: Float(Double(arc4random_uniform(255))/255.0), blue: Float(Double(arc4random_uniform(255))/255.0), alpha: 1.0)
     }
     
 

@@ -83,7 +83,7 @@ class QRCodeShowInfoView: UIView {
         self.password = wifiPwd
     }
     
-    func copyPwd(sender:UIButton) {
+    @objc func copyPwd(sender:UIButton) {
         let paste = UIPasteboard.general
         paste.string = password
         

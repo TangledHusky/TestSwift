@@ -55,7 +55,7 @@ class SnapKitViewController: UIViewController {
         
     }
 
-    func btnClick(sender:UIButton) {
+    @objc func btnClick(sender:UIButton) {
         let vc = SnapDetailViewController()
         vc.type = sender.tag
         self.navigationController?.pushViewController(vc, animated: true)

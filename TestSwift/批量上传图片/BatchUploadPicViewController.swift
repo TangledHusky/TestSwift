@@ -31,7 +31,7 @@ class BatchUploadPicViewController: UIViewController {
     
     
 
-    func batchUpload(sender:UIButton) {
+    @objc func batchUpload(sender:UIButton) {
         
         let group = DispatchGroup()
         

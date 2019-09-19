@@ -51,7 +51,7 @@ class CommonTestViewController: UIViewController {
     ///  测试-截取字符串
     func testSubbstring() {
         var str = "12345678"
-        let length = str.characters.count
+        let length = str.count
 
         //截取前四位
         let sub1 = str.substring(to: str.index(str.startIndex, offsetBy: 4))
@@ -109,9 +109,9 @@ class CommonTestViewController: UIViewController {
         style.alignment = .center           //居中显示（如果要设置alignment，这个必须设置，因为label的textAlignment会无效）
         style.firstLineHeadIndent = 25.0    //设置首行字符缩进距离
         style.headIndent = 5                //每行的左右间距
-        attrStr.addAttribute(NSParagraphStyleAttributeName, value: style, range: NSRange(location: 0, length: (lblTitle.text?.characters.count)!))
+        attrStr.addAttribute(NSAttributedString.Key.paragraphStyle, value: style, range: NSRange(location: 0, length: (lblTitle.text?.count)!))
         //设置字间距
-        attrStr.addAttribute(NSKernAttributeName, value: 1.5, range: NSRange(location: 0, length: (lblTitle.text?.characters.count)!))
+        attrStr.addAttribute(NSAttributedString.Key.kern, value: 1.5, range: NSRange(location: 0, length: (lblTitle.text?.count)!))
         lblTitle.attributedText = attrStr
         
     }

@@ -1,5 +1,13 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
 #endif
 
 #import "ZXAztecDecoder.h"
@@ -55,6 +63,7 @@
 #import "ZXCapture.h"
 #import "ZXCaptureDelegate.h"
 #import "ZXCGImageLuminanceSource.h"
+#import "ZXCGImageLuminanceSourceInfo.h"
 #import "ZXImage.h"
 #import "ZXMathUtils.h"
 #import "ZXMonochromeRectangleDetector.h"
@@ -69,6 +78,7 @@
 #import "ZXBoolArray.h"
 #import "ZXByteArray.h"
 #import "ZXCharacterSetECI.h"
+#import "ZXDecimal.h"
 #import "ZXDecoderResult.h"
 #import "ZXDefaultGridSampler.h"
 #import "ZXDetectorResult.h"
@@ -163,6 +173,7 @@
 #import "ZXCode39Reader.h"
 #import "ZXCode39Writer.h"
 #import "ZXCode93Reader.h"
+#import "ZXCode93Writer.h"
 #import "ZXEAN13Reader.h"
 #import "ZXEAN13Writer.h"
 #import "ZXEAN8Reader.h"

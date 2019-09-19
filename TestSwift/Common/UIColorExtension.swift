@@ -29,7 +29,7 @@ extension UIColor {
     }
     
     class func getRandomColor() ->UIColor {
-        return UIColor(colorLiteralRed: Float(Float(arc4random_uniform(256))/255.0), green: Float(Float(arc4random_uniform(256))/255.0), blue: Float(Float(arc4random_uniform(256))/255.0), alpha: 1.0)
+        return UIColor(_colorLiteralRed: Float(Float(arc4random_uniform(256))/255.0), green: Float(Float(arc4random_uniform(256))/255.0), blue: Float(Float(arc4random_uniform(256))/255.0), alpha: 1.0)
     }
     
 }

@@ -38,7 +38,7 @@ class SnapDetailViewController: UIViewController {
             })
             box2.snp.makeConstraints({ (make) in
                 //内距box1边距分别为10、20、30、40
-                make.edges.equalTo(box1).inset(UIEdgeInsetsMake(10, 20, 30, 40))
+                make.edges.equalTo(box1).inset(UIEdgeInsets(top: 10, left: 20, bottom: 30, right: 40))
             })
         case 102:
             box1.backgroundColor = UIColor.red

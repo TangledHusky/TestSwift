@@ -32,7 +32,7 @@ class YJSliderViewController: UIViewController {
         
     }
     
-    func changeSlider() {
+    @objc func changeSlider() {
         print(slider.value)
         
     }

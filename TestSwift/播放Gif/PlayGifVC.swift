@@ -32,7 +32,7 @@ class PlayGifVC: UIViewController {
         addGif()
     }
     
-    func addGif() {
+    @objc func addGif() {
         for v in self.view.subviews {
             if v.isKind(of: UISegmentedControl .classForCoder()) {
                 continue
@@ -46,7 +46,7 @@ class PlayGifVC: UIViewController {
         case 0:
             //sd_webimage   加载
             loadingImg = UIImageView(frame: CGRect(x: (KScreenWidth-200)/2, y: 100, width:200 , height: 200))
-            loadingImg?.image = UIImage.sd_animatedGIF(with: imgData)
+            loadingImg?.image = UIImage.sd_image(with: imgData, scale: 1.0, firstFrameOnly: false)//sd_animatedGIF(with: imgData)
             self.view.addSubview(loadingImg!)
             print("sd_webimage")
 
