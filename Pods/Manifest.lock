@@ -20,7 +20,13 @@ PODS:
   - HandyJSON (5.0.0)
   - JSONModel (1.8.0)
   - MJRefresh (3.2.0)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
   - ObjectMapper (3.5.1)
+  - Result (4.1.0)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -37,7 +43,8 @@ PODS:
     - SDWebImage/Core (= 5.1.1)
   - SDWebImage/Core (5.1.1)
   - SnapKit (4.2.0)
-  - SwiftPopMenu (1.0.4)
+  - SwiftPopMenu (2.0.2)
+  - SwiftyJSON (5.0.0)
   - ViewDeck (3.1.0)
   - ZXingObjC (3.6.5):
     - ZXingObjC/All (= 3.6.5)
@@ -50,6 +57,7 @@ DEPENDENCIES:
   - HandyJSON
   - JSONModel
   - MJRefresh
+  - Moya
   - ObjectMapper
   - RxCocoa
   - RxDataSources
@@ -58,6 +66,7 @@ DEPENDENCIES:
   - SDWebImage
   - SnapKit
   - SwiftPopMenu
+  - SwiftyJSON
   - ViewDeck
   - ZXingObjC (~> 3.0)
 
@@ -70,7 +79,9 @@ SPEC REPOS:
     - HandyJSON
     - JSONModel
     - MJRefresh
+    - Moya
     - ObjectMapper
+    - Result
     - RxCocoa
     - RxDataSources
     - RxRelay
@@ -79,6 +90,7 @@ SPEC REPOS:
     - SDWebImage
     - SnapKit
     - SwiftPopMenu
+    - SwiftyJSON
     - ViewDeck
     - ZXingObjC
 
@@ -90,7 +102,9 @@ SPEC CHECKSUMS:
   HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
@@ -98,10 +112,11 @@ SPEC CHECKSUMS:
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
   SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SwiftPopMenu: c9c70b928f7bb8c5804d2457e1db50359f231a25
+  SwiftPopMenu: e8ad0724497781abec06c16e158d08d741c794cd
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   ViewDeck: 942d90dd23c9f97cc8038be352255378167edcca
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 1bd449b48076da00951fb3ff965a4c0eab0163ac
+PODFILE CHECKSUM: 2c04a231c7509abb4418b8fe429c8e85e58e1425
 
 COCOAPODS: 1.7.4

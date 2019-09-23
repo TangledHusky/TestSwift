@@ -23,11 +23,8 @@ class PoPMenuViewController: UIViewController {
                
         self.view.backgroundColor = UIColor.white
         
-        
-        popMenu =  SwiftPopMenu(frame: CGRect(x: 230, y: 44, width: 140, height: 100))
-        
-        
-        popMenu.popData = [(icon:"",title:"sdddf"),(icon:"",title:"23344")]
+        let config = [SwiftPopMenuConfigure.popMenuAlpha(0.4)]
+        popMenu = SwiftPopMenu(menuWidth: 150, arrow: CGPoint(x: 100, y: 100), datas: [(icon:"",title:"sdddf"),(icon:"",title:"23344")])
         popMenu.show()
         
  

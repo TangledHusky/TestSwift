@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class DYHomeViewController: UIViewController {
 
@@ -25,21 +24,25 @@ class DYHomeViewController: UIViewController {
 
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        let jsonString:String = PublicMethod.getJSONStringFromDictionary(dictionary: ["SystemName":"iOS","TsName":"Student"]) as String
-        
-//        YJAlamafireHelper.post(urlStr: "http://sign.siva.edu.cn/app1/appVersionInfo.do", params: ["jsonString":jsonString as AnyObject]) { (response) in
-//            print(response)
-//        }
-        
 
         
-//        YJAlamafireHelper.download(urlStr: "https://httpbin.org/image/png") { (data) in
-//            DispatchQueue.main.async {
-//                
-//            }
-//        }
+        goAlamofire()
     }
+    
+    
+    func goAlamofire()  {
+        
+    
+            YJRequestManager.share.GET(url: "http://api.product.kai12.cn/v1/update/whitelist", param: nil, success: { (response) in
+                let model = AuthorAreaListModel(JSON: response)
+                print(model)
+                
+            }) { (errorMsg) in
+                print(errorMsg)
+            }
+        
+    }
+    
     
   
 }

@@ -17,14 +17,14 @@ pod 'CocoaAsyncSocket'
 pod 'SnapKit'
 
 pod 'Alamofire'
-
+pod 'Moya'
 pod 'ObjectMapper'
 pod 'RxSwift'
 pod 'RxCocoa'
 pod 'RxDataSources'
 
 pod 'AFNetworking'
-
+pod 'SwiftyJSON'
 pod 'HandyJSON'
 
 end

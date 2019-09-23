@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F2CCCC92A36EDB746C8524E /* Pods_TestSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */; };
 		8F2E8261E422EEBF2BC125D6 /* Pods_TestSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */; };
+		9165156C2338C2820001004C /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9165156B2338C2820001004C /* CityModel.swift */; };
 		FA07A26B1EA1EF8600B0A071 /* YJSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A26A1EA1EF8600B0A071 /* YJSliderViewController.swift */; };
 		FA07A26D1EA1EF9000B0A071 /* YJSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A26C1EA1EF9000B0A071 /* YJSlider.swift */; };
 		FA31809C1FA1848C0026CD6F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA31809B1FA1848C0026CD6F /* AudioToolbox.framework */; };
@@ -64,8 +65,6 @@
 		FA3F27531E4C594900CAA270 /* CycleBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27521E4C594900CAA270 /* CycleBannerViewController.swift */; };
 		FA3F27551E4C595300CAA270 /* PictureBrowsingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27541E4C595300CAA270 /* PictureBrowsingViewController.swift */; };
 		FA3F27571E4C595A00CAA270 /* CornerRadiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27561E4C595A00CAA270 /* CornerRadiusViewController.swift */; };
-		FA3F275B1E4C59A100CAA270 /* DYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27591E4C59A100CAA270 /* DYMainViewController.swift */; };
-		FA3F275C1E4C59A100CAA270 /* DYDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F275A1E4C59A100CAA270 /* DYDefine.swift */; };
 		FA3F275F1E4C59F200CAA270 /* DYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F275E1E4C59F200CAA270 /* DYHomeViewController.swift */; };
 		FA3F276D1E4C641500CAA270 /* HZPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27621E4C641500CAA270 /* HZPhotoBrowser.m */; };
 		FA3F276E1E4C641500CAA270 /* HZPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27651E4C641500CAA270 /* HZPhotoBrowserView.m */; };
@@ -105,14 +104,13 @@
 		FA7DD5BF1F074D85002F4237 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6327101E6FB1FA009F1CE7 /* ScrollViewController.swift */; };
 		FA7DD5C01F074D85002F4237 /* MyRightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F273B1E4C588500CAA270 /* MyRightMenuViewController.swift */; };
 		FA7DD5C11F074D85002F4237 /* YJSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A26A1EA1EF8600B0A071 /* YJSliderViewController.swift */; };
-		FA7DD5C21F074D85002F4237 /* DYDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F275A1E4C59A100CAA270 /* DYDefine.swift */; };
 		FA7DD5C31F074D85002F4237 /* QRCodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4E1E7634F000C8C4AE /* QRCodeScanViewController.swift */; };
 		FA7DD5C41F074D85002F4237 /* CycleBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27521E4C594900CAA270 /* CycleBannerViewController.swift */; };
 		FA7DD5C61F074D85002F4237 /* QRCodeShowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55EEC11E76863700684131 /* QRCodeShowInfoView.swift */; };
 		FA7DD5C71F074D85002F4237 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A54B1E8369E200171770 /* TableViewModel.swift */; };
 		FA7DD5C81F074D85002F4237 /* TestPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F11E8B4D980027B7AD /* TestPopoverViewController.swift */; };
 		FA7DD5C91F074D85002F4237 /* CornerRadiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27561E4C595A00CAA270 /* CornerRadiusViewController.swift */; };
-		FA7DD5CA1F074D85002F4237 /* YJAlamafireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA860A121E519A7A0084A025 /* YJAlamafireHelper.swift */; };
+		FA7DD5CA1F074D85002F4237 /* YJRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA860A121E519A7A0084A025 /* YJRequestManager.swift */; };
 		FA7DD5CB1F074D85002F4237 /* QRCodeGenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4C1E7634E200C8C4AE /* QRCodeGenerateViewController.swift */; };
 		FA7DD5CC1F074D85002F4237 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D571E763B2C00C8C4AE /* UIImageExtension.swift */; };
 		FA7DD5CD1F074D85002F4237 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55EEC31E76887900684131 /* UIColorExtension.swift */; };
@@ -123,7 +121,6 @@
 		FA7DD5D21F074D85002F4237 /* CommonTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDCA551E724B9A0075492D /* CommonTestViewController.swift */; };
 		FA7DD5D31F074D85002F4237 /* UDPClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A4001E80F64100171770 /* UDPClientViewController.swift */; };
 		FA7DD5D41F074D85002F4237 /* GifView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F274C1E4C594200CAA270 /* GifView.m */; };
-		FA7DD5D51F074D85002F4237 /* DYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27591E4C59A100CAA270 /* DYMainViewController.swift */; };
 		FA7DD5D61F074D85002F4237 /* CGContextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27461E4C592700CAA270 /* CGContextVC.swift */; };
 		FA7DD5D71F074D85002F4237 /* TestDownloadingCircleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3756601E948860009938AE /* TestDownloadingCircleVC.swift */; };
 		FA7DD5D81F074D85002F4237 /* BatchUploadPicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BF1471EB8290F000A37AD /* BatchUploadPicViewController.swift */; };
@@ -180,14 +177,13 @@
 		FA81AE4C1F0736FF00285DB3 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6327101E6FB1FA009F1CE7 /* ScrollViewController.swift */; };
 		FA81AE4D1F0736FF00285DB3 /* MyRightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F273B1E4C588500CAA270 /* MyRightMenuViewController.swift */; };
 		FA81AE4E1F0736FF00285DB3 /* YJSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07A26A1EA1EF8600B0A071 /* YJSliderViewController.swift */; };
-		FA81AE4F1F0736FF00285DB3 /* DYDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F275A1E4C59A100CAA270 /* DYDefine.swift */; };
 		FA81AE501F0736FF00285DB3 /* QRCodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4E1E7634F000C8C4AE /* QRCodeScanViewController.swift */; };
 		FA81AE511F0736FF00285DB3 /* CycleBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27521E4C594900CAA270 /* CycleBannerViewController.swift */; };
 		FA81AE531F0736FF00285DB3 /* QRCodeShowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55EEC11E76863700684131 /* QRCodeShowInfoView.swift */; };
 		FA81AE541F0736FF00285DB3 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A54B1E8369E200171770 /* TableViewModel.swift */; };
 		FA81AE551F0736FF00285DB3 /* TestPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F11E8B4D980027B7AD /* TestPopoverViewController.swift */; };
 		FA81AE561F0736FF00285DB3 /* CornerRadiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27561E4C595A00CAA270 /* CornerRadiusViewController.swift */; };
-		FA81AE571F0736FF00285DB3 /* YJAlamafireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA860A121E519A7A0084A025 /* YJAlamafireHelper.swift */; };
+		FA81AE571F0736FF00285DB3 /* YJRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA860A121E519A7A0084A025 /* YJRequestManager.swift */; };
 		FA81AE581F0736FF00285DB3 /* QRCodeGenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D4C1E7634E200C8C4AE /* QRCodeGenerateViewController.swift */; };
 		FA81AE591F0736FF00285DB3 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE61D571E763B2C00C8C4AE /* UIImageExtension.swift */; };
 		FA81AE5A1F0736FF00285DB3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA55EEC31E76887900684131 /* UIColorExtension.swift */; };
@@ -198,7 +194,6 @@
 		FA81AE5F1F0736FF00285DB3 /* CommonTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDCA551E724B9A0075492D /* CommonTestViewController.swift */; };
 		FA81AE601F0736FF00285DB3 /* UDPClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32A4001E80F64100171770 /* UDPClientViewController.swift */; };
 		FA81AE611F0736FF00285DB3 /* GifView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3F274C1E4C594200CAA270 /* GifView.m */; };
-		FA81AE621F0736FF00285DB3 /* DYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27591E4C59A100CAA270 /* DYMainViewController.swift */; };
 		FA81AE631F0736FF00285DB3 /* CGContextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F27461E4C592700CAA270 /* CGContextVC.swift */; };
 		FA81AE641F0736FF00285DB3 /* TestDownloadingCircleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3756601E948860009938AE /* TestDownloadingCircleVC.swift */; };
 		FA81AE651F0736FF00285DB3 /* BatchUploadPicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BF1471EB8290F000A37AD /* BatchUploadPicViewController.swift */; };
@@ -241,7 +236,7 @@
 		FA83C4F21E8B4D980027B7AD /* TestPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F11E8B4D980027B7AD /* TestPopoverViewController.swift */; };
 		FA83C4F41E8B4DA90027B7AD /* TestSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F31E8B4DA90027B7AD /* TestSplitViewController.swift */; };
 		FA83C4F61E8B51A60027B7AD /* TestPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83C4F51E8B51A60027B7AD /* TestPadViewController.swift */; };
-		FA860A131E519A7A0084A025 /* YJAlamafireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA860A121E519A7A0084A025 /* YJAlamafireHelper.swift */; };
+		FA860A131E519A7A0084A025 /* YJRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA860A121E519A7A0084A025 /* YJRequestManager.swift */; };
 		FA860A161E51A8DB0084A025 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA860A151E51A8DB0084A025 /* Alamofire.framework */; };
 		FADDCA561E724B9A0075492D /* CommonTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDCA551E724B9A0075492D /* CommonTestViewController.swift */; };
 		FADDCA581E7287700075492D /* PublicMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDCA571E7287700075492D /* PublicMethod.swift */; };
@@ -277,6 +272,7 @@
 /* Begin PBXFileReference section */
 		0AF8EC3595F779412EB3F401 /* Pods-TestSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestSwift/Pods-TestSwift.release.xcconfig"; sourceTree = "<group>"; };
 		49C18F83CD4971C56C3A3F50 /* Pods_TestSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9165156B2338C2820001004C /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 		F96A0CE05D5D19AB7F7E8B45 /* Pods-TestSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestSwift/Pods-TestSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		FA07A26A1EA1EF8600B0A071 /* YJSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJSliderViewController.swift; sourceTree = "<group>"; };
 		FA07A26C1EA1EF9000B0A071 /* YJSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJSlider.swift; sourceTree = "<group>"; };
@@ -335,8 +331,6 @@
 		FA3F27521E4C594900CAA270 /* CycleBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleBannerViewController.swift; sourceTree = "<group>"; };
 		FA3F27541E4C595300CAA270 /* PictureBrowsingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureBrowsingViewController.swift; sourceTree = "<group>"; };
 		FA3F27561E4C595A00CAA270 /* CornerRadiusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadiusViewController.swift; sourceTree = "<group>"; };
-		FA3F27591E4C59A100CAA270 /* DYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYMainViewController.swift; sourceTree = "<group>"; };
-		FA3F275A1E4C59A100CAA270 /* DYDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYDefine.swift; sourceTree = "<group>"; };
 		FA3F275E1E4C59F200CAA270 /* DYHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYHomeViewController.swift; sourceTree = "<group>"; };
 		FA3F27611E4C641500CAA270 /* HZPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowser.h; sourceTree = "<group>"; };
 		FA3F27621E4C641500CAA270 /* HZPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowser.m; sourceTree = "<group>"; };
@@ -376,7 +370,7 @@
 		FA83C4F11E8B4D980027B7AD /* TestPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPopoverViewController.swift; sourceTree = "<group>"; };
 		FA83C4F31E8B4DA90027B7AD /* TestSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSplitViewController.swift; sourceTree = "<group>"; };
 		FA83C4F51E8B51A60027B7AD /* TestPadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPadViewController.swift; sourceTree = "<group>"; };
-		FA860A121E519A7A0084A025 /* YJAlamafireHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJAlamafireHelper.swift; sourceTree = "<group>"; };
+		FA860A121E519A7A0084A025 /* YJRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YJRequestManager.swift; sourceTree = "<group>"; };
 		FA860A151E51A8DB0084A025 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/TestSwift-axvnupztigjzrvderfqlhtuemajz/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		FADDCA551E724B9A0075492D /* CommonTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTestViewController.swift; sourceTree = "<group>"; };
 		FADDCA571E7287700075492D /* PublicMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicMethod.swift; sourceTree = "<group>"; };
@@ -607,7 +601,7 @@
 				FADDCA541E724B740075492D /* 通用测试页面 */,
 				FA63270F1E6FB1B3009F1CE7 /* 侧边固定滑动 */,
 				FA3F27321E4C3D0C00CAA270 /* Common */,
-				FA3F27581E4C597F00CAA270 /* 仿斗鱼(未实现) */,
+				FA3F27581E4C597F00CAA270 /* 网络封装测试 */,
 				FA3F27331E4C3D2100CAA270 /* Main */,
 				FA3F27311E4C3CF700CAA270 /* PopView－边角弹出箭头框 */,
 				FA3F27301E4C3CE600CAA270 /* CGContext－直线、虚线、圆 */,
@@ -702,7 +696,7 @@
 		FA3F27321E4C3D0C00CAA270 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				FA860A121E519A7A0084A025 /* YJAlamafireHelper.swift */,
+				FA860A121E519A7A0084A025 /* YJRequestManager.swift */,
 				FADDCA571E7287700075492D /* PublicMethod.swift */,
 				FAE61D571E763B2C00C8C4AE /* UIImageExtension.swift */,
 				FA55EEC31E76887900684131 /* UIColorExtension.swift */,
@@ -727,23 +721,14 @@
 			path = "侧边栏";
 			sourceTree = "<group>";
 		};
-		FA3F27581E4C597F00CAA270 /* 仿斗鱼(未实现) */ = {
-			isa = PBXGroup;
-			children = (
-				FA3F275D1E4C59B000CAA270 /* 首页 */,
-				FA3F27591E4C59A100CAA270 /* DYMainViewController.swift */,
-				FA3F275A1E4C59A100CAA270 /* DYDefine.swift */,
-			);
-			name = "仿斗鱼(未实现)";
-			path = "仿斗鱼";
-			sourceTree = "<group>";
-		};
-		FA3F275D1E4C59B000CAA270 /* 首页 */ = {
+		FA3F27581E4C597F00CAA270 /* 网络封装测试 */ = {
 			isa = PBXGroup;
 			children = (
 				FA3F275E1E4C59F200CAA270 /* DYHomeViewController.swift */,
+				9165156B2338C2820001004C /* CityModel.swift */,
 			);
-			name = "首页";
+			name = "网络封装测试";
+			path = "仿斗鱼";
 			sourceTree = "<group>";
 		};
 		FA3F27601E4C641500CAA270 /* ptotoBrowser */ = {
@@ -1084,7 +1069,9 @@
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
@@ -1093,6 +1080,7 @@
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftPopMenu/SwiftPopMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewDeck/ViewDeck.framework",
 				"${BUILT_PRODUCTS_DIR}/ZXingObjC/ZXingObjC.framework",
 			);
@@ -1105,7 +1093,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
@@ -1114,6 +1104,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftPopMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewDeck.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZXingObjC.framework",
 			);
@@ -1163,7 +1154,6 @@
 				FA6327111E6FB1FA009F1CE7 /* ScrollViewController.swift in Sources */,
 				FA3F273D1E4C588500CAA270 /* MyRightMenuViewController.swift in Sources */,
 				FA07A26B1EA1EF8600B0A071 /* YJSliderViewController.swift in Sources */,
-				FA3F275C1E4C59A100CAA270 /* DYDefine.swift in Sources */,
 				FAE61D4F1E7634F000C8C4AE /* QRCodeScanViewController.swift in Sources */,
 				FA3F27531E4C594900CAA270 /* CycleBannerViewController.swift in Sources */,
 				FA55EEC21E76863700684131 /* QRCodeShowInfoView.swift in Sources */,
@@ -1171,7 +1161,7 @@
 				FA3C10CC1F0CBCA90008A0F7 /* TestHandyJson.swift in Sources */,
 				FA83C4F21E8B4D980027B7AD /* TestPopoverViewController.swift in Sources */,
 				FA3F27571E4C595A00CAA270 /* CornerRadiusViewController.swift in Sources */,
-				FA860A131E519A7A0084A025 /* YJAlamafireHelper.swift in Sources */,
+				FA860A131E519A7A0084A025 /* YJRequestManager.swift in Sources */,
 				FAE61D4D1E7634E200C8C4AE /* QRCodeGenerateViewController.swift in Sources */,
 				FAE61D581E763B2C00C8C4AE /* UIImageExtension.swift in Sources */,
 				FA55EEC41E76887900684131 /* UIColorExtension.swift in Sources */,
@@ -1181,9 +1171,9 @@
 				FA3F27711E4C641500CAA270 /* HZWaitingView.m in Sources */,
 				FA3F27781E4C644B00CAA270 /* BSCycleTextView.m in Sources */,
 				FADDCA561E724B9A0075492D /* CommonTestViewController.swift in Sources */,
+				9165156C2338C2820001004C /* CityModel.swift in Sources */,
 				FA32A4011E80F64100171770 /* UDPClientViewController.swift in Sources */,
 				FA3F274F1E4C594200CAA270 /* GifView.m in Sources */,
-				FA3F275B1E4C59A100CAA270 /* DYMainViewController.swift in Sources */,
 				FA3F27481E4C592700CAA270 /* CGContextVC.swift in Sources */,
 				FA3756611E948860009938AE /* TestDownloadingCircleVC.swift in Sources */,
 				FA3BF1481EB8290F000A37AD /* BatchUploadPicViewController.swift in Sources */,
@@ -1235,7 +1225,6 @@
 				FA7DD5BF1F074D85002F4237 /* ScrollViewController.swift in Sources */,
 				FA7DD5C01F074D85002F4237 /* MyRightMenuViewController.swift in Sources */,
 				FA7DD5C11F074D85002F4237 /* YJSliderViewController.swift in Sources */,
-				FA7DD5C21F074D85002F4237 /* DYDefine.swift in Sources */,
 				FA7DD5C31F074D85002F4237 /* QRCodeScanViewController.swift in Sources */,
 				FA7DD5C41F074D85002F4237 /* CycleBannerViewController.swift in Sources */,
 				FA7DD5C61F074D85002F4237 /* QRCodeShowInfoView.swift in Sources */,
@@ -1243,7 +1232,7 @@
 				FA3C10CE1F0CBCA90008A0F7 /* TestHandyJson.swift in Sources */,
 				FA7DD5C81F074D85002F4237 /* TestPopoverViewController.swift in Sources */,
 				FA7DD5C91F074D85002F4237 /* CornerRadiusViewController.swift in Sources */,
-				FA7DD5CA1F074D85002F4237 /* YJAlamafireHelper.swift in Sources */,
+				FA7DD5CA1F074D85002F4237 /* YJRequestManager.swift in Sources */,
 				FA7DD5CB1F074D85002F4237 /* QRCodeGenerateViewController.swift in Sources */,
 				FA7DD5CC1F074D85002F4237 /* UIImageExtension.swift in Sources */,
 				FA7DD5CD1F074D85002F4237 /* UIColorExtension.swift in Sources */,
@@ -1255,7 +1244,6 @@
 				FA7DD5D21F074D85002F4237 /* CommonTestViewController.swift in Sources */,
 				FA7DD5D31F074D85002F4237 /* UDPClientViewController.swift in Sources */,
 				FA7DD5D41F074D85002F4237 /* GifView.m in Sources */,
-				FA7DD5D51F074D85002F4237 /* DYMainViewController.swift in Sources */,
 				FA7DD5D61F074D85002F4237 /* CGContextVC.swift in Sources */,
 				FA7DD5D71F074D85002F4237 /* TestDownloadingCircleVC.swift in Sources */,
 				FA7DD5D81F074D85002F4237 /* BatchUploadPicViewController.swift in Sources */,
@@ -1299,7 +1287,6 @@
 				FA81AE4C1F0736FF00285DB3 /* ScrollViewController.swift in Sources */,
 				FA81AE4D1F0736FF00285DB3 /* MyRightMenuViewController.swift in Sources */,
 				FA81AE4E1F0736FF00285DB3 /* YJSliderViewController.swift in Sources */,
-				FA81AE4F1F0736FF00285DB3 /* DYDefine.swift in Sources */,
 				FA81AE501F0736FF00285DB3 /* QRCodeScanViewController.swift in Sources */,
 				FA81AE511F0736FF00285DB3 /* CycleBannerViewController.swift in Sources */,
 				FA81AE531F0736FF00285DB3 /* QRCodeShowInfoView.swift in Sources */,
@@ -1307,7 +1294,7 @@
 				FA3C10CD1F0CBCA90008A0F7 /* TestHandyJson.swift in Sources */,
 				FA81AE551F0736FF00285DB3 /* TestPopoverViewController.swift in Sources */,
 				FA81AE561F0736FF00285DB3 /* CornerRadiusViewController.swift in Sources */,
-				FA81AE571F0736FF00285DB3 /* YJAlamafireHelper.swift in Sources */,
+				FA81AE571F0736FF00285DB3 /* YJRequestManager.swift in Sources */,
 				FA81AE581F0736FF00285DB3 /* QRCodeGenerateViewController.swift in Sources */,
 				FA81AE591F0736FF00285DB3 /* UIImageExtension.swift in Sources */,
 				FA81AE5A1F0736FF00285DB3 /* UIColorExtension.swift in Sources */,
@@ -1319,7 +1306,6 @@
 				FA81AE5F1F0736FF00285DB3 /* CommonTestViewController.swift in Sources */,
 				FA81AE601F0736FF00285DB3 /* UDPClientViewController.swift in Sources */,
 				FA81AE611F0736FF00285DB3 /* GifView.m in Sources */,
-				FA81AE621F0736FF00285DB3 /* DYMainViewController.swift in Sources */,
 				FA81AE631F0736FF00285DB3 /* CGContextVC.swift in Sources */,
 				FA81AE641F0736FF00285DB3 /* TestDownloadingCircleVC.swift in Sources */,
 				FA81AE651F0736FF00285DB3 /* BatchUploadPicViewController.swift in Sources */,
@@ -1517,7 +1503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zyyj.com.cn.TestSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = TestSwift;
 			};
 			name = Debug;
@@ -1530,7 +1516,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.zyyj.com.cn.TestSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = TestSwift;
 			};
 			name = Release;

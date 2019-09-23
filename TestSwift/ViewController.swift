@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     let cellID:String = "homeCellID"
     
-    lazy var dataArry:[String] = ["仿斗鱼（未实现）",
+    lazy var dataArry:[String] = ["alamofire测试",
                                   "图片浏览器",
                                   "圆角与裁剪的测试",
                                   "广告轮播",
